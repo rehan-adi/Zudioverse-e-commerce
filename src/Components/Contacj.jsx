@@ -26,7 +26,7 @@ function Contacj() {
                         <span><FiPhoneCall className='inline-block mr-3 text-2xl ' /></span>+1234-567-8910</p>
                 </div>
                 <div className='mt-10'>
-                    <span><MdOutlineMail className='inline-block text-2xl' /></span> uder@gmail.com
+                    <span><MdOutlineMail className='inline-block text-2xl' /></span> user@gmail.com
                 </div>
                 <div className='mt-10 text-center'>
                     <span><SiGooglemaps className='inline-block text-2xl' /></span>  Silicon Vallye
