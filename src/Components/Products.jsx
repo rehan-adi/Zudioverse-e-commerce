@@ -5,7 +5,7 @@ function Products() {
         <div id='Products' className='w-auto h-[130vh] bg-white'>
             <div className='flex justify-center gap-8'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
-                    <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" width={200} alt="" />
+                    <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" width={200} alt="" />
                     <p className='text-xl text-center '>40s and Shorties <br /> T-shirt</p>
                       <p className=' mt-4 text-base'>$10.89</p>
                 </div>
