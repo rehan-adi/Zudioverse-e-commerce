@@ -1,4 +1,5 @@
 import React from 'react'
+import { ImTruck } from "react-icons/im";
 
 function Tshirt40s() {
   return (
@@ -9,7 +10,7 @@ function Tshirt40s() {
     <div>
         <h1 className='text-5xl font-semibold'>40s & Shorties <br /> T- Shirt</h1>
         <h3 className='text-3xl mt-4'>$10.89</h3>
-        <p className='mt-10 text-base'>
+        <p className='mt-8 text-base'>
         Simplistic logo tee from 40s & Shorties, featuring a primary <br /> color rendition of their typeface logo. Cotton is cut in a  <br />standard fit and offers short sleeves and tonal, ribbed banding <br /> at crew-neck.
             </p>
         <h3 className='font-semibold mt-5 text-black text-lg'>Size</h3>
@@ -24,6 +25,7 @@ function Tshirt40s() {
         <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
         <div>
         <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
+        <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
         </div>
     </div>
 </div>

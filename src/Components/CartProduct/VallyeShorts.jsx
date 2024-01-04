@@ -1,4 +1,5 @@
 import React from 'react'
+import { ImTruck } from "react-icons/im";
 
 function VallyeShorts() {
     return (
@@ -9,7 +10,7 @@ function VallyeShorts() {
             <div>
                 <h1 className='text-5xl font-semibold'>Lucien Stripe Knit <br /> Volley Short</h1>
                 <h3 className='text-3xl mt-4'>$39.00</h3>
-                <p className='mt-10 text-base'>Easy pull on + go short in an allover vertical stripe pattern. <br />  Soft textured cotton is cut in a silhouette that hits above the <br /> knee with a split hem, featuring an elastic waist + adjustable <br /> exterior drawstring for a comfortable fit. Complete with front <br /> slip pockets and back patch pockets. Get them only at Urban <br /> Outfitters.</p>
+                <p className='mt-8 text-base'>Easy pull on + go short in an allover vertical stripe pattern. <br />  Soft textured cotton is cut in a silhouette that hits above the <br /> knee with a split hem, featuring an elastic waist + adjustable <br /> exterior drawstring for a comfortable fit. Complete with front <br /> slip pockets and back patch pockets. Get them only at Urban <br /> Outfitters.</p>
                 <h3 className='font-semibold mt-5 text-black text-lg'>Size</h3>
                 <select className='mt-2 bg-slate-50 py-2 px-2 border-b pr-[480px]' name="cars" id="cars">
                     <option value="volvo">Select Size</option>
@@ -22,6 +23,8 @@ function VallyeShorts() {
                 <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
                 <div>
                 <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
+
+                <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
                 </div>
             </div>
         </div>
