@@ -4,7 +4,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 import './CartProduct/swiper.css';
 
 function About() {
@@ -22,7 +21,7 @@ function About() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 2700,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -36,9 +35,20 @@ function About() {
           <h1 className='text-6xl mb-6 font-semibold'>"SUPERIOR TO OTHER <br /> ATHLETIC WEAR, GOING <br /> TO BUY MORE."</h1>
           <p className='text-xl opacity-60'>JENNY HARLEM</p>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>
+          <h1 className='text-6xl mb-6 font-semibold'>"YOUR BIKER SHORTS <br /> ARE MY GO TO <br /> RUNNING WEAR EVERY <br /> DAY."</h1>
+          <p className='text-xl opacity-60'>SARAH CALSEY</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h1 className='text-6xl mb-6 font-semibold'>
+            "I'VE BOUGHT TWO <br /> PAIRS AND NOW I CAN'T <br /> LIVE WITHOUT THEM."
+          </h1>
+          <p className='text-xl opacity-60'>EMILY COLSEN</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <h1 className='text-6xl mb-6 font-semibold'>"THE SHORTS WERE <br /> JUST WHAT I NEEDED <br /> TO GET ACTIVE <br /> OUTSIDE."</h1>
+          <p className='text-xl opacity-60'>TAYLOR FLUTTER</p>
+        </SwiperSlide>
       </Swiper>
     </div>
   )

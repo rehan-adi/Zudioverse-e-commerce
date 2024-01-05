@@ -53,7 +53,7 @@ function Collection() {
                    initial={{opacity: 0, y : 30}}
                    animate={{opacity: 1, y : 0}}
                    transition={{duration: 0.80, delay: 1.80}}
-                  >offer</motion.span>.</motion.p>
+                  >offer.</motion.span></motion.p>
                   <motion.button
                     initial={{opacity: 0, y : 30, rotate: 10}}
                     animate={{opacity: 1, y : 0, rotate: 0}}
