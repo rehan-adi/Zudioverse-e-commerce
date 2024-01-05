@@ -2,7 +2,8 @@ import React from 'react'
 
 function Products() {
     return (
-        <div id='Products' className='w-auto h-[130vh] pt-28 bg-white'>
+        <div id='Products' className='w-auto h-[200vh] pt-28 bg-white'>
+             <h1 className='text-4xl mb-10 text-center font-semibold'>Stylish Everyday Essentials</h1>
             <div className='flex justify-center gap-8'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                     <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" width={200} alt="" />
@@ -25,7 +26,7 @@ function Products() {
                       <p className=' mt-4 text-base'>$73.33</p>
                 </div>
             </div>
-            <div className='flex justify-center mt-9 gap-8'>
+            <diiiiv className='flex justify-center mt-9 gap-8'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                     <img src="	https://assets-global.website-files.com/5bf4ed555845523b870b4290/5bf584894ad02a31f916ea00_alt-5-main.png" className='mt-6' width={160} alt="" />
                     <p className='text-xl text-[#333333] text-center mt-10 '>90s and Shorties <br /> Jacket</p>
@@ -46,7 +47,29 @@ function Products() {
                      <p className='text-xl text-center mt-10 '>Western Flannel <br /> Jacket</p>
                       <p className=' mt-4 text-base'>$23.33</p>
                 </div>
-            </div>
+            </diiiiv>
+            <diiiiv className='flex justify-center mt-9 gap-8'>
+                <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
+                    <img src="	https://assets-global.website-files.com/5bf4ed555845523b870b4290/5bf584894ad02a31f916ea00_alt-5-main.png" className='mt-6' width={160} alt="" />
+                    <p className='text-xl text-[#333333] text-center mt-10 '>90s and Shorties <br /> Jacket</p>
+                      <p className=' mt-4 text-[#333333] text-base'>$10.89</p>
+                </div>
+                <div className='bg-gray-50 flex justify-center items-center flex-col w-[40vh] h-[55vh]'>
+                    <img src="https://assets-global.website-files.com/5eeac043f1adfb724bac7340/5eeac043f1adfb55ecac75f0_20190619_SFP_Product_PrideTeesAndMore_Web_800x1200-35__96426.1562346474.1280.1280.jpg" className='mt-2' width={165} />
+                      <p className='text-xl mt-8  text-[#333333] text-center'>ZudioVerse Grey <br /> T-Shirt</p>
+                      <p className=' text-[#333333] mt-4 text-base'>$23.56</p>
+                </div>
+                <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
+                     <img src="https://assets.website-files.com/5eeac043f1adfb724bac7340/5eeac043f1adfb5ca9ac7615_2016.6.22_SFP_Photoshoot1851b__92743.1467324920.1280.1280-p-500.jpeg" width={200} alt="" />
+                     <p className='text-xl text-center '>Patterned Flannel <br /> Shirt</p>
+                      <p className=' mt-4 text-base'>$45.89</p>
+                </div>
+                <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
+                     <img src="https://assets-global.website-files.com/5bef4f05df7c091d0a2bf416/5bef4f05df7c09d7672bf41b_ezgif.com-webp-to-jpg.jpg" className='mt-6' width={160} alt="" />
+                     <p className='text-xl text-center mt-10 '>STEFAN JANOSKI <br />PREMIUM </p>
+                      <p className=' mt-4 text-base'>$23.33</p>
+                </div>
+            </diiiiv>
         </div>
     )
 }

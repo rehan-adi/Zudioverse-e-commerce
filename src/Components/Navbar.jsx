@@ -14,7 +14,7 @@ function Navbar() {
         <h1 className='font-semibold uppercase text-2xl'>Zudio<span className='text-yellow-500'>Verse</span></h1>
       </div>
       <div className='flex uppercase items-center gap-10'>
-        <Link to="/collection" className='relative group'>
+        <Link to="/" className='relative group'>
           <span className='font-medium group-hover:underline cursor-pointer underline-offset-[6px] group-hover:mt-1 text-black text-base'>Home</span>
         </Link>
         <Link to="/about" className='relative group'>
