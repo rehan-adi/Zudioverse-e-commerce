@@ -9,6 +9,8 @@ import GoToTopButton from './Components/GoToTopButton';
 import { Routes, Route } from 'react-router-dom';
 import VallyeShorts from './Components/CartProduct/VallyeShorts';
 import Tshirt40s from './Components/CartProduct/Tshirt40s';
+import FannelShirt from './Components/CartProduct/FannelShirt';
+import CoacJacket from './Components/CartProduct/CoacJacket';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path='/Products' element={<Products />} />
           <Route path='/Products/VallyeShorts' element={<VallyeShorts />} />
           <Route path='/Products/Tshirt40s' element={<Tshirt40s />} />
+          <Route path='/Products/FannelShirt' element={<FannelShirt />} />
+          <Route path='/Products/CoacJacket' element={<CoacJacket />} />
         <Route path='/contact' element={<Contacj />} />
       </Routes>
       <GoToTopButton />

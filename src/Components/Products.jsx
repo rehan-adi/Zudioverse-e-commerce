@@ -20,16 +20,20 @@ function Products() {
                       <p className=' mt-4 text-base'>$23.56</p>
                 </div>
                 </Link>
+                <Link to='/Products/FannelShirt'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                      <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8c77d99ee591668884bf_UOLongSleevePatternedFlannelShirt.jpeg" width={200} alt="" />
                      <p className='text-xl text-center '>Patterned Flannel <br /> Shirt</p>
                       <p className=' mt-4 text-base'>$45.89</p>
                 </div>
+                </Link>
+                <Link to='/Products/CoacJacket'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                      <img src="https://uploads-ssl.webflow.com/5c4b8cc3eefcd01f7e8c02dd/5c4c077825a0935fbee1b645_1.jpg" width={900} className='mt-10' alt="" />
                      <p className='text-xl mt-2 text-center '>Coat Cerry <br /> Jacket</p>
                       <p className=' mt-4 text-base'>$73.33</p>
                 </div>
+                </Link>
             </div>
             <div className='flex justify-center mt-9 gap-8'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
