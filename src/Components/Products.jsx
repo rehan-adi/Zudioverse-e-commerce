@@ -6,11 +6,13 @@ function Products() {
         <div className='w-auto h-[200vh] pt-28 bg-white'>
              <h1 className='text-4xl mb-10 text-center font-semibold'>Stylish Everyday Essentials</h1>
             <div className='flex justify-center gap-8'>
+                <Link to='/Products/Tshirt40s'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                     <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" width={200} alt="" />
                     <p className='text-xl text-center '>40s and Shorties <br /> T-shirt</p>
                       <p className=' mt-4 text-base'>$10.89</p>
                 </div>
+                </Link>
                 <Link to='/Products/VallyeShorts'>
                 <div className='bg-gray-50 flex justify-center items-center flex-col w-[40vh] h-[55vh]'>
                     <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" width={200} alt="image" />

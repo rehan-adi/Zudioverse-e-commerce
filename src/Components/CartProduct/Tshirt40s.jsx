@@ -3,14 +3,14 @@ import { ImTruck } from "react-icons/im";
 
 function Tshirt40s() {
   return (
-    <div className='w-auto flex items-center justify-around  h-screen'>
+    <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
     <div className=''>
-        <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" width={485} alt="image" />
+        <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" width={380} alt="image" />
     </div>
     <div>
         <h1 className='text-5xl font-semibold'>40s & Shorties <br /> T- Shirt</h1>
-        <h3 className='text-3xl mt-4'>$10.89</h3>
-        <p className='mt-8 text-base'>
+        <h3 className='text-2xl mt-3'>$10.89</h3>
+        <p className='mt-5 text-base'>
         Simplistic logo tee from 40s & Shorties, featuring a primary <br /> color rendition of their typeface logo. Cotton is cut in a  <br />standard fit and offers short sleeves and tonal, ribbed banding <br /> at crew-neck.
             </p>
         <h3 className='font-semibold mt-5 text-black text-lg'>Size</h3>
