@@ -3,14 +3,14 @@ import { ImTruck } from "react-icons/im";
 
 function VallyeShorts() {
     return (
-        <div className='w-auto flex items-center justify-around  h-screen'>
+        <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
             <div className=''>
-                <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" width={485} alt="image" />
+                <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" width={380} alt="image" />
             </div>
             <div>
-                <h1 className='text-5xl font-semibold'>Lucien Stripe Knit <br /> Volley Short</h1>
-                <h3 className='text-3xl mt-4'>$39.00</h3>
-                <p className='mt-8 text-base'>Easy pull on + go short in an allover vertical stripe pattern. <br />  Soft textured cotton is cut in a silhouette that hits above the <br /> knee with a split hem, featuring an elastic waist + adjustable <br /> exterior drawstring for a comfortable fit. Complete with front <br /> slip pockets and back patch pockets. Get them only at Urban <br /> Outfitters.</p>
+                <h1 className='text-5xl font-semibold'>Lucien Stripe Knit <br /> Valley Short</h1>
+                <h3 className='text-2xl mt-3'>$39.00</h3>
+                <p className='mt-5 text-base'>Easy pull on + go short in an allover vertical stripe pattern. <br />  Soft textured cotton is cut in a silhouette that hits above the <br /> knee with a split hem, featuring an elastic waist + adjustable <br /> exterior drawstring for a comfortable fit. Complete with front <br /> slip pockets and back patch pockets. Get them only at Urban <br /> Outfitters.</p>
                 <h3 className='font-semibold mt-5 text-black text-lg'>Size</h3>
                 <select className='mt-2 bg-slate-50 py-2 px-2 border-b pr-[480px]' name="cars" id="cars">
                     <option value="volvo">Select Size</option>

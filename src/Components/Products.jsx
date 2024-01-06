@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link} from 'react-router-dom';
 
 function Products() {
     return (
-        <div id='Products' className='w-auto h-[200vh] pt-28 bg-white'>
+        <div className='w-auto h-[200vh] pt-28 bg-white'>
              <h1 className='text-4xl mb-10 text-center font-semibold'>Stylish Everyday Essentials</h1>
             <div className='flex justify-center gap-8'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
@@ -10,11 +11,13 @@ function Products() {
                     <p className='text-xl text-center '>40s and Shorties <br /> T-shirt</p>
                       <p className=' mt-4 text-base'>$10.89</p>
                 </div>
+                <Link to='/Products/VallyeShorts'>
                 <div className='bg-gray-50 flex justify-center items-center flex-col w-[40vh] h-[55vh]'>
                     <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" width={200} alt="image" />
                       <p className='text-xl'>Valley Short</p>
                       <p className=' mt-4 text-base'>$23.56</p>
                 </div>
+                </Link>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                      <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8c77d99ee591668884bf_UOLongSleevePatternedFlannelShirt.jpeg" width={200} alt="" />
                      <p className='text-xl text-center '>Patterned Flannel <br /> Shirt</p>
@@ -26,7 +29,7 @@ function Products() {
                       <p className=' mt-4 text-base'>$73.33</p>
                 </div>
             </div>
-            <diiiiv className='flex justify-center mt-9 gap-8'>
+            <div className='flex justify-center mt-9 gap-8'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                     <img src="	https://assets-global.website-files.com/5bf4ed555845523b870b4290/5bf584894ad02a31f916ea00_alt-5-main.png" className='mt-6' width={160} alt="" />
                     <p className='text-xl text-[#333333] text-center mt-10 '>90s and Shorties <br /> Jacket</p>
@@ -47,8 +50,8 @@ function Products() {
                      <p className='text-xl text-center mt-10 '>Western Flannel <br /> Jacket</p>
                       <p className=' mt-4 text-base'>$23.33</p>
                 </div>
-            </diiiiv>
-            <diiiiv className='flex justify-center mt-9 gap-8'>
+            </div>
+            <div className='flex justify-center mt-9 gap-8'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                     <img src="	https://assets-global.website-files.com/5bf4ed555845523b870b4290/5bf584894ad02a31f916ea00_alt-5-main.png" className='mt-6' width={160} alt="" />
                     <p className='text-xl text-[#333333] text-center mt-10 '>90s and Shorties <br /> Jacket</p>
@@ -69,7 +72,7 @@ function Products() {
                      <p className='text-xl text-center mt-10 '>STEFAN JANOSKI <br />PREMIUM </p>
                       <p className=' mt-4 text-base'>$23.33</p>
                 </div>
-            </diiiiv>
+            </div>
         </div>
     )
 }
