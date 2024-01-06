@@ -3,7 +3,7 @@ import { ImTruck } from "react-icons/im";
 
 function CoacJacket() {
   return (
-    <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
+    <div className='w-auto flex items-center pt-20 justify-around  h-screen'>
     <div className=''>
         <img src="https://uploads-ssl.webflow.com/5c4b8cc3eefcd01f7e8c02dd/5c4c077825a0935fbee1b645_1.jpg" width={450} alt="image" />
     </div>

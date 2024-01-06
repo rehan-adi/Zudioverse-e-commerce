@@ -46,11 +46,13 @@ function Products() {
                       <p className='text-xl mt-8  text-[#333333] text-center'>ZudioVerse Grey <br /> T-Shirt</p>
                       <p className=' text-[#333333] mt-4 text-base'>$23.56</p>
                 </div>
+                <Link to='/Products/SwimShort'>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
-                     <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8c77d99ee591668884bf_UOLongSleevePatternedFlannelShirt.jpeg" width={200} alt="" />
-                     <p className='text-xl text-center '>Patterned Flannel <br /> Shirt</p>
-                      <p className=' mt-4 text-base'>$45.89</p>
+                     <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8bb49254e947dcc1e806_BoardiesRefresherSwimShort.jpeg" width={200} alt="" />
+                     <p className='text-xl text-center '>Boardies® Swim <br /> Short</p>
+                      <p className=' mt-4 text-base'>$20.89</p>
                 </div>
+                </Link>
                 <div className='bg-gray-50 flex flex-col justify-center items-center w-[40vh] h-[55vh]'>
                      <img src="https://assets-global.website-files.com/5bf4ed555845523b870b4290/5bf5026793783654acbd0491_5-main.png" className='mt-6' width={160} alt="" />
                      <p className='text-xl text-center mt-10 '>Western Flannel <br /> Jacket</p>

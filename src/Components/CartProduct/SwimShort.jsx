@@ -1,30 +1,29 @@
 import React from 'react'
 import { ImTruck } from "react-icons/im";
 
-function Tshirt40s() {
+function SwimShort() {
   return (
-    <div className='w-auto flex items-center pt-24 justify-around  h-screen'>
+    <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
     <div className=''>
-        <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" width={380} alt="image" />
+        <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8bb49254e947dcc1e806_BoardiesRefresherSwimShort.jpeg" width={380} alt="image" />
     </div>
     <div>
-        <h1 className='text-5xl font-semibold'>40s & Shorties <br /> T- Shirt</h1>
-        <h3 className='text-2xl mt-3'>$10.89</h3>
-        <p className='mt-5 text-base'>
-        Simplistic logo tee from 40s & Shorties, featuring a primary <br /> color rendition of their typeface logo. Cotton is cut in a  <br />standard fit and offers short sleeves and tonal, ribbed banding <br /> at crew-neck.
-            </p>
+        <h1 className='text-5xl font-semibold'>Boardies® Swim <br /> Short</h1>
+        <h3 className='text-2xl mt-3'>$20.89</h3>
+        <p className='mt-5 text-base'>Bold hues meet thick stripes in these colorblocked swim shorts <br /> from Boardies®, cut above the knee and topped with an <br /> adjustable drawcord waist for a perfect fit. Finished with front <br /> slant pockets and a single back patch pocket with woven logo <br /> tag. London-based Boardies® designs apparel + swim for those <br /> who like to have fun and express their individuality.</p>
         <h3 className='font-semibold mt-5 text-black text-lg'>Size</h3>
         <select className='mt-2 bg-slate-50 py-2 px-2 border-b pr-[480px]' name="cars" id="cars">
             <option value="volvo">Select Size</option>
             <option value="saab">S</option>
             <option value="mercedes">M</option>
-            <option value="audi">L</option>
             <option value="audi">XL</option>
+            <option value="audi">2XL</option>
         </select>
         <h3 className='font-semibold mt-5 text-black text-lg'>Quantity</h3>
         <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
         <div>
         <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
+
         <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
         </div>
     </div>
@@ -32,4 +31,4 @@ function Tshirt40s() {
   )
 }
 
-export default Tshirt40s
+export default SwimShort

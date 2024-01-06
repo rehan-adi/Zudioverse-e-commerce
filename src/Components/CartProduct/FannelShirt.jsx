@@ -3,7 +3,7 @@ import { ImTruck } from "react-icons/im";
 
 function FannelShirt() {
   return (
-    <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
+    <div className='w-auto flex items-center pt-20 justify-around  h-screen'>
     <div className=''>
         <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8c77d99ee591668884bf_UOLongSleevePatternedFlannelShirt.jpeg" width={350} alt="image" />
     </div>
