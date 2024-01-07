@@ -1,7 +1,25 @@
 import React from 'react'
 import { ImTruck } from "react-icons/im";
+import { useDispatch } from 'react-redux';
+import { addItem } from './Store/Slice';
 
 function FannelShirt() {
+
+    const Dispatch = useDispatch();
+
+    const Submit = (item) => {
+      Dispatch(addItem(item));
+      alert("Item add to cart");
+      };
+
+      const item = {
+        id: 1,
+        name: 'Patterned Flannel Shirt',
+        price: 45.89,
+        quantity: 1,
+      };
+  
+    
 
   return (
     <div className='w-auto flex items-center pt-20 justify-around  h-screen'>
@@ -25,7 +43,7 @@ function FannelShirt() {
         <h3 className='font-semibold mt-5 text-black text-lg'>Quantity</h3>
         <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
         <div>
-        <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
+        <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white' onClick={() => Submit(item)} >Add to Cart</button>
         <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
         </div>
     </div>

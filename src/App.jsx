@@ -12,6 +12,7 @@ import Tshirt40s from './Components/CartProduct/Tshirt40s';
 import FannelShirt from './Components/CartProduct/FannelShirt';
 import CoacJacket from './Components/CartProduct/CoacJacket';
 import SwimShort from './Components/CartProduct/SwimShort';
+import CartProduct from './Components/CartProduct';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/Products/CoacJacket' element={<CoacJacket />} />
           <Route path='/Products/SwimShort' element={<SwimShort />} />
         <Route path='/contact' element={<Contacj />} />
+        <Route path='/cart' element={<CartProduct />} />
       </Routes>
       <GoToTopButton />
       <Footer />

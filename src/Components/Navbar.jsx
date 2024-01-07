@@ -29,7 +29,9 @@ function Navbar() {
       </div>
       <div className='flex gap-5'>
         <img src="	src\Components\Images\Search.svg" alt="Search" />
+        <Link to="/cart">
         <img src="src\Components\Images\CART1.svg" width={20} alt="Cart" />
+        </Link>
         <span><IoIosHeartEmpty className='text-2xl' /></span>
       </div>
     </motion.div>
