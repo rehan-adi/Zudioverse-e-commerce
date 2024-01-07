@@ -1,7 +1,25 @@
 import React from 'react'
 import { ImTruck } from "react-icons/im";
+import { useDispatch } from 'react-redux';
+import { addItem } from './Store/Slice';
 
 function Tshirt40s() {
+
+    const Dispatch = useDispatch();
+
+    const Submit = (item) => {
+        Dispatch(addItem(item))
+    };
+
+    const item = {
+        id: 3,
+        name : '40s & Shorties T-Shirt',
+        price: 10.89,
+        quantity: 1,
+        discount: 20.33,
+        img: 'https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg'
+    };
+
   return (
     <div className='w-auto flex items-center pt-24 justify-around  h-screen'>
     <div className=''>
@@ -24,7 +42,7 @@ function Tshirt40s() {
         <h3 className='font-semibold mt-5 text-black text-lg'>Quantity</h3>
         <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
         <div>
-        <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
+        <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white' onClick={() => Submit(item)}>Add to Cart</button>
         <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
         </div>
     </div>

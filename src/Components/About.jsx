@@ -33,11 +33,6 @@ function About() {
             <p className='text-lg mt-7 opacity-70'>Rehan started this company in his room <br /> apartment. Rabitur cursus ut lectus porta <br /> placerat. Vamus quaise facilisis nulla id dui <br /> ague sellus portor.</p>
         </div>
       </div>
-      {/* <p className='mt-14 text-xl font-semibold opacity-85'>OUR STORY</p>
-      <h1 className='text-4xl mt-3 font-semibold'>STARTED FROM
-        THE BOTTOM</h1>
-      <p className='mt-6 text-center'>Now we're here. Consectetur piscis elit Rabitur cursus ut lectus porta placerat. Vivamus quis facilisis <br /> nulla id dui augue sellus porttitor. Fabrics and gear made for every workout. Find the right athletic <br /> wear to reach new goals in comfort. Our innovative fabric gives you the comfort to flow through <br /> your goals in every movement and find a better work.</p>
-      <p className='text-center mb-5 mt-3'>we're about creating products that amplify your workouts. Lorem ipsum dol amet, consectetur <br /> piscis rabitur cursus lectus por.</p> */}
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

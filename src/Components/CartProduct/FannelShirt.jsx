@@ -9,7 +9,6 @@ function FannelShirt() {
 
     const Submit = (item) => {
       Dispatch(addItem(item));
-      alert("Item add to cart");
       };
 
       const item = {
@@ -17,6 +16,7 @@ function FannelShirt() {
         name: 'Patterned Flannel Shirt',
         price: 45.89,
         quantity: 1,
+        img: 'https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8c77d99ee591668884bf_UOLongSleevePatternedFlannelShirt.jpeg'
       };
   
     
