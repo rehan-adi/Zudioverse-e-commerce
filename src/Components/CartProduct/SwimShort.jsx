@@ -1,5 +1,6 @@
 import React from 'react'
 import { ImTruck } from "react-icons/im";
+import { AiOutlineHeart } from "react-icons/ai";
 
 function SwimShort() {
   return (
@@ -22,8 +23,8 @@ function SwimShort() {
         <h3 className='font-semibold mt-5 text-black text-lg'>Quantity</h3>
         <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
         <div>
-        <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
-
+        <button className='py-3 px-4 mr-6 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
+        <button className='py-3 px-4 bg-white border font-semibold border-black text-center text-black'>Wishlist<span><AiOutlineHeart className='inline-block ml-2 ' /></span></button>
         <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
         </div>
     </div>
