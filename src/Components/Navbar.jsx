@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import { IoIosHeartEmpty } from "react-icons/io";
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+
+  const cartItems = useSelector((state) => state.cart);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -1000 }}
@@ -28,9 +32,12 @@ function Navbar() {
         </Link>
       </div>
       <div className='flex gap-5'>
-        <img src="	src\Components\Images\Search.svg" alt="Search" />
+        <img src="src\Components\Images\Search.svg" alt="Search" />
         <Link to="/cart">
-        <img src="src\Components\Images\CART1.svg" width={20} alt="Cart" />
+          <img src="src\Components\Images\CART1.svg" width={23} alt="Cart" />
+          <sup className='bg-black w-6 h-6 text-center rounded-full font-medium text-sm text-white absolute top-3 right-[140px] inline-flex items-center justify-center'>
+            {cartItems.length}
+          </sup>
         </Link>
         <span><IoIosHeartEmpty className='text-2xl' /></span>
       </div>
