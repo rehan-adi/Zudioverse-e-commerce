@@ -2,6 +2,7 @@ import React from 'react'
 import { ImTruck } from "react-icons/im";
 
 function FannelShirt() {
+
   return (
     <div className='w-auto flex items-center pt-20 justify-around  h-screen'>
     <div className=''>
