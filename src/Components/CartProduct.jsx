@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeItem } from './CartProduct/Store/Slice';
 import { FiShoppingCart } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 function CartProduct() {
   const cartItems = useSelector((state) => state.cart);
@@ -19,7 +20,9 @@ function CartProduct() {
         <div className='flex flex-col items-center'>
           <p className='font-semibold mb-16 text-2xl'>Your cart is empty</p>
           <FiShoppingCart className='text-[200px]' />
+          <Link to="/Products">
           <button className='bg-black ml-10 mt-8 text-white px-9 py-3'>Shop</button>
+          </Link>
         </div>
       ) : (
         <ul className='flex justify-center mt-20 flex-col gap-3 w-[80vw] items-center h-[220px]'>

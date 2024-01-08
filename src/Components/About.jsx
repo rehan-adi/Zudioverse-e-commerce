@@ -16,7 +16,7 @@ function About() {
         <div className=''>
           <h1 className='text-5xl mad font-semibold'>WE EMPOWER YOU TO <br /> MOVE COMFORTABLY</h1>
           <p className='text-lg mt-7 opacity-70'>At Athletics, we're about creating products that <br /> amplify your workouts. Lorem ipsum dol amet, <br /> consectetur piscis rabitur cursus lectus por.</p>
-          <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Shop Now</button>
+          <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Explore</button>
         </div>
         <div>
           <img src="https://assets.website-files.com/61983c3a41be5bad7444a3c0/61f2e70177f8584393e77273_Image020%201.jpg" className='rotate-6' width={180} alt="" />

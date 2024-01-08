@@ -1,6 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 function Collection() {
 
@@ -54,11 +55,13 @@ function Collection() {
                    animate={{opacity: 1, y : 0}}
                    transition={{duration: 0.80, delay: 1.80}}
                   >offer.</motion.span></motion.p>
+                  <Link to="/Products">
                   <motion.button
                     initial={{opacity: 0, y : 30, rotate: 10}}
                     animate={{opacity: 1, y : 0, rotate: 0}}
                     transition={{duration: 0.80, delay: 2.10}}
                   className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>See Collection</motion.button>
+                  </Link>
              </div>
              <div className=''>
                 <img src="https://uploads-ssl.webflow.com/5c7b4529d99ee5d38a884f51/5c7c6df7d99ee57ba589af62_beanie-casual-fashion-1967565%20(1).jpg"  width={650}  alt="img" />
