@@ -43,7 +43,7 @@ function VallyeShorts() {
                 <div>
                 <button className='py-3 px-4 mt-8 mr-6 bg-black hover:opacity-80 text-white' onClick={() => Submit(item)}>Add to Cart</button>
                 <a href="https://buy.stripe.com/test_3csbIMd1raWc9S85kk">
-                <button className='py-3 px-4 bg-white border font-semibold border-black text-center text-black'>Shop<span><TiShoppingCart className='inline-block ml-2 ' /></span></button>
+                <button className='py-3 px-4 bg-white border font-semibold border-black text-center text-black'>Shop<span><TiShoppingCart className='inline-block ml-2 text-xl' /></span></button>
                 </a>
                 <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
                 </div>
