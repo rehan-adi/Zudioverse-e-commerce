@@ -2,7 +2,7 @@ import React from 'react'
 import { ImTruck } from "react-icons/im";
 import { useDispatch } from 'react-redux';
 import { addItem } from './Store/Slice';
-import { AiOutlineHeart } from "react-icons/ai";
+import { TiShoppingCart } from "react-icons/ti";
 
 function VallyeShorts() {
 
@@ -42,7 +42,9 @@ function VallyeShorts() {
                 <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
                 <div>
                 <button className='py-3 px-4 mt-8 mr-6 bg-black hover:opacity-80 text-white' onClick={() => Submit(item)}>Add to Cart</button>
-                <button className='py-3 px-4 bg-white border font-semibold border-black text-center text-black'>Wishlist<span><AiOutlineHeart className='inline-block ml-2 ' /></span></button>
+                <a href="https://buy.stripe.com/test_3csbIMd1raWc9S85kk">
+                <button className='py-3 px-4 bg-white border font-semibold border-black text-center text-black'>Shop<span><TiShoppingCart className='inline-block ml-2 ' /></span></button>
+                </a>
                 <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
                 </div>
             </div>
