@@ -3,10 +3,26 @@ import { ImTruck } from "react-icons/im";
 import { TiShoppingCart } from "react-icons/ti";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useDispatch } from 'react-redux';
+import { addItem } from './Store/Slice';
 
 function SwimShort() {
 
-  const notify = () => toast.success("Added To Cart");
+    const Dispatch = useDispatch();
+    const notify = () => toast.success("Added To Cart");
+
+    const Submit = (item) => {
+        Dispatch(addItem(item))
+    };
+
+  const item = {
+    id: 5,
+    name : 'Boardies® Swim Short',
+    price: 20.89,
+    quantity: 1,
+    discount: 20.33,
+    img: 'https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8bb49254e947dcc1e806_BoardiesRefresherSwimShort.jpeg',
+}
 
   return (
     <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
