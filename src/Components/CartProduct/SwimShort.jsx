@@ -1,10 +1,16 @@
 import React from 'react'
 import { ImTruck } from "react-icons/im";
 import { TiShoppingCart } from "react-icons/ti";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function SwimShort() {
+
+  const notify = () => toast.success("Added To Cart");
+
   return (
     <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
+        <ToastContainer />
     <div className=''>
         <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8bb49254e947dcc1e806_BoardiesRefresherSwimShort.jpeg" width={380} alt="image" />
     </div>
@@ -23,7 +29,7 @@ function SwimShort() {
         <h3 className='font-semibold mt-5 text-black text-lg'>Quantity</h3>
         <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
         <div>
-        <button className='py-3 px-4 mr-6 mt-8 bg-black hover:opacity-80 text-white'>Add to Cart</button>
+        <button className='py-3 px-4 mt-8 mr-6 bg-black hover:opacity-80 text-white' onClick={() => { notify(); Submit(item); }}>Add to Cart</button>
         <button className='py-3 px-4 bg-white border font-semibold border-black text-center text-black'>Shop<span><TiShoppingCart className='inline-block text-xl ml-2 ' /></span></button>
         <h1 className='mt-5 font-semibold'> <ImTruck  className='inline-block mr-2'/>Free shipping & returns in all orders.</h1>
         </div>

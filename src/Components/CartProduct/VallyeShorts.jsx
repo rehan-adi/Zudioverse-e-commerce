@@ -3,10 +3,13 @@ import { ImTruck } from "react-icons/im";
 import { useDispatch } from 'react-redux';
 import { addItem } from './Store/Slice';
 import { TiShoppingCart } from "react-icons/ti";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function VallyeShorts() {
 
     const Dispatch = useDispatch();
+    const notify = () => toast.success("Added To Cart");
 
    const Submit = (item) => {
       Dispatch(addItem(item));
@@ -23,6 +26,7 @@ function VallyeShorts() {
 
     return (
         <div className='w-auto flex items-center pt-32 justify-around  h-screen'>
+         <ToastContainer />
             <div className=''>
                 <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" width={380} alt="image" />
             </div>
@@ -41,7 +45,7 @@ function VallyeShorts() {
                 <h3 className='font-semibold mt-5 text-black text-lg'>Quantity</h3>
                 <input type="number" className='mt-3 w-16 border pl-4 py-2 ' placeholder='1' />
                 <div>
-                <button className='py-3 px-4 mt-8 mr-6 bg-black hover:opacity-80 text-white' onClick={() => Submit(item)}>Add to Cart</button>
+                <button className='py-3 px-4 mt-8 mr-6 bg-black hover:opacity-80 text-white' onClick={() => { notify(); Submit(item); }}>Add to Cart</button>
                 <a href="https://buy.stripe.com/test_3csbIMd1raWc9S85kk">
                 <button className='py-3 px-4 bg-white border font-semibold border-black text-center text-black'>Shop<span><TiShoppingCart className='inline-block ml-2 text-xl' /></span></button>
                 </a>

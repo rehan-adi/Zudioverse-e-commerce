@@ -3,10 +3,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeItem } from './CartProduct/Store/Slice';
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function CartProduct() {
   const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  const notify = () => toast.error("Removed From Cart");
 
   const removeItemHandler = (item) => {
     dispatch(removeItem(item));
@@ -14,6 +17,7 @@ function CartProduct() {
 
   return (
     <div className='h-[140vh] w-auto flex flex-col justify-start pt-28 items-center text-black bg-white '>
+         <ToastContainer />
       <h1 className='text-4xl mb-16 font-semibold'>Your Cart Section</h1>
       
       {cartItems.length === 0 ? (
@@ -40,9 +44,8 @@ function CartProduct() {
                   <span className='opacity-55 line-through'>$55.80</span> ${item.price}
                 </p>
                 <p className='font-semibold'>Quantity: {item.quantity}</p>
-                <button className='bg-black text-white px-5 py-3' onClick={() => removeItemHandler(item)}>
-                  Remove
-                </button>
+                <button className='bg-black text-white px-5 py-3' onClick={() => { notify(); removeItemHandler(item); }}>Remove</button>
+
               </div>
             </li>
           ))}
