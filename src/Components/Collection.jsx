@@ -37,6 +37,48 @@ function Collection() {
     }
   }, [inView1, weekend, weekend1]);
 
+  const Starboy = useAnimation();
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView2) {
+      Starboy.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+    }
+  }, [inView2, Starboy]);
+
+
+
+  const Image = useAnimation();
+  const Image1 = useAnimation();
+  const Image2 = useAnimation();
+  const Image3 = useAnimation();
+  const Image4 = useAnimation();
+  const Image5 = useAnimation();
+  const Image6 = useAnimation();
+  const Image7 = useAnimation();
+
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView3) {
+      Image.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      Image1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } });
+      Image2.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.7 } });
+      Image3.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.9 } });
+      Image4.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 1.1 } });
+      Image5.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 1.3 } });
+      Image6.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 1.5 } });
+      Image7.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 1.7 } });
+    }
+  }, [inView3]);
+
 
   const imageTextStyle = {
     position: 'absolute',
@@ -153,7 +195,11 @@ function Collection() {
             </h1>
     </div>
     <div className='bg-white mt-16 w-auto h-[85vh]'>
-      <h1 className='text-5xl mt-7 ml-[70px] font-bold'>Colabration with top brand's. </h1>
+      <motion.h1
+        initial={{opacity: 0, x : -35}}
+        animate={Starboy}
+        ref={ref2}   
+      className='text-5xl mt-7 ml-[70px] font-bold'>Colabration with top brand's. </motion.h1>
       <div className='flex justify-center mt-6 gap-10 items-center'>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/Screenshot_2023-07-18_at_18.46.24.jpg?v=1689859402&width=430" alt="" />
@@ -171,14 +217,46 @@ function Collection() {
     </div>
     <div className='h-[15vh] flex mt-5 mb-5 justify-center items-center w-auto bh-white'>
                <div className='flex justify-center gap-14 items-center'>
-                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" width={65} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" width={70} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" width={70} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" width={100} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" width={100} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" width={100} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" width={100} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" width={100} alt="" />
+                  <motion.img
+                     initial={{opacity: 0, x : -35}}
+                     animate={Image}
+                     ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" width={65} alt="" />
+                  <motion.img
+                  initial={{opacity: 0, x : -35}}
+                  animate={Image1}
+                  ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" width={70} alt="" />
+                  <motion.img
+                  initial={{opacity: 0, x : -35}}
+                  animate={Image2}
+                  ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" width={70} alt="" />
+                  <motion.img
+                  initial={{opacity: 0, x : -35}}
+                  animate={Image3}
+                  ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" width={100} alt="" />
+                  <motion.img
+                  initial={{opacity: 0, x : -35}}
+                  animate={Image4}
+                  ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" width={100} alt="" />
+                  <motion.img
+                   initial={{opacity: 0, x : -35}}
+                   animate={Image5}
+                   ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" width={100} alt="" />
+                  <motion.img
+                   initial={{opacity: 0, x : -35}}
+                   animate={Image6}
+                   ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" width={100} alt="" />
+                  <motion.img
+                    initial={{opacity: 0, x : -35}}
+                    animate={Image7}
+                    ref={ref3}   
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" width={100} alt="" />
                </div>
     </div> 
 
