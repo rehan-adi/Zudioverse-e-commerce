@@ -1,9 +1,42 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation'
-import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
+import  {useEffect} from 'react'
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Collection() {
+
+
+
+  const controls1 = useAnimation();
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+    }
+  }, [inView, controls1]);
+
+  const weekend = useAnimation();
+  const weekend1 = useAnimation();
+
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView1) {
+      weekend.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      weekend1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.8 } });
+    }
+  }, [inView1, weekend, weekend1]);
+
 
   const imageTextStyle = {
     position: 'absolute',
@@ -67,17 +100,23 @@ function Collection() {
                 <img src="https://uploads-ssl.webflow.com/5c7b4529d99ee5d38a884f51/5c7c6df7d99ee57ba589af62_beanie-casual-fashion-1967565%20(1).jpg"  width={650}  alt="img" />
              </div>
     </div>
-      <h1 className='text-5xl mt-20 ml-[70px] font-bold'>
+      <motion.h1
+       initial={{opacity: 0, x : -35}}
+       animate={controls1}
+       ref={ref}  
+      className='text-5xl mt-20 ml-[70px] font-bold'>
         Curated <span className='opacity-55 text-[#333333]'>Collections</span>
-      </h1>
+      </motion.h1>
       <div className='flex justify-center mt-5 gap-10 items-center'>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/IMG_2512_2.jpg?v=1695800703&width=430" alt="" />
-          <p style={imageTextStyle} className='uppercase'  >Elevate Your Wardrobe</p>
+          <p
+          style={imageTextStyle} className='uppercase'  >Elevate Your Wardrobe</p>
         </div>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/IMG_2511.jpg?v=1695799414&width=430" alt="" />
-          <p style={imageTextStyle} className='uppercase' >New Era</p>
+          <p
+          style={imageTextStyle} className='uppercase' >New Era</p>
         </div>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/IMG_8635.jpg?v=1689981261&width=430" alt="" />
@@ -85,8 +124,16 @@ function Collection() {
         </div>
       </div>
       <div>
-          <h1 className='text-5xl mt-14 ml-[70px] font-bold'>Featured <span className='opacity-55 text-[#333333]'>Categories</span></h1>
-          <p className='text-xl font-semibold ml-[70px] mt-5 '>All weather condition - Jacket - T-Shirt - Shirt - Shorts and many more. </p>
+          <motion.h1
+           initial={{opacity: 0, x : -35}}
+           animate={weekend}
+           ref={ref1}   
+          className='text-5xl mt-14 ml-[70px] font-bold'>Featured <span className='opacity-55 text-[#333333]'>Categories</span></motion.h1>
+          <motion.p
+           initial={{opacity: 0, x : -35}}
+           animate={weekend1}
+           ref={ref}   
+          className='text-xl font-semibold ml-[70px] mt-5 '>All weather condition - Jacket - T-Shirt - Shirt - Shorts and many more. </motion.p>
       </div>
       <div className='w-auto h-[16vh] flex justify-center mt-16 items-center bg-yellow-500'>
             <h1 className='font-semibold uppercase text-2xl'>ZudioVerse Offer <span> 
