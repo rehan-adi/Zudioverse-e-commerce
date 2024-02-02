@@ -2,16 +2,28 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
-// import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './CartProduct/swiper.css';
+import { motion } from 'framer-motion';
 
 function About() {
   return (
     <div id='about' className='w-auto flex justify-center pt-28 items-center flex-col h-[260vh] bg-white'>
-      <h1 className='text-4xl font-semibold'>About ZUDIOVERSE</h1>
-      <p className='text-center line mt-6'>We are a lifestyle retailer dedicated to inspiring customers through a unique <br /> combination of product, creativity and cultural understanding. Founded in 1970 in a <br /> small space across the street from the University of Pennsylvania.</p>
-      <p className='text-center line mt-6'> <span className='text-black font-semibold'>ZUDIOVERSE</span> now operates over 200 stores in the United States, Canada and Europe, <br /> offering experiential retail environments and a well-curated mix men's product <br /> assortments.</p>
+      <motion.h1
+      initial={{opacity: 0, x: -100}}
+      animate={{opacity: 1, x: 0}}
+      transition={{duration: 0.90, delay: 0.10}} 
+      className='text-4xl font-semibold'>About ZUDIOVERSE</motion.h1>
+      <motion.p
+      initial={{opacity: 0, x: -100}}
+      animate={{opacity: 1, x: 0}}
+      transition={{duration: 0.90, delay: 0.40}} 
+      className='text-center line mt-6'>We are a lifestyle retailer dedicated to inspiring customers through a unique <br /> combination of product, creativity and cultural understanding. Founded in 1970 in a <br /> small space across the street from the University of Pennsylvania.</motion.p>
+      <motion.p
+      initial={{opacity: 0, x: -100}}
+      animate={{opacity: 1, x: 0}}
+      transition={{duration: 0.90, delay: 0.70}} 
+      className='text-center line mt-6'> <span className='text-black font-semibold'>ZUDIOVERSE</span> now operates over 200 stores in the United States, Canada and Europe, <br /> offering experiential retail environments and a well-curated mix men's product <br /> assortments.</motion.p>
       <div className='flex gap-96 pb-9 pt-24 items-center'>
         <div className=''>
           <h1 className='text-5xl mad font-semibold'>WE EMPOWER YOU TO <br /> MOVE COMFORTABLY</h1>

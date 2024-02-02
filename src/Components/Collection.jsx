@@ -32,8 +32,8 @@ function Collection() {
 
   useEffect(() => {
     if (inView1) {
-      weekend.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
-      weekend1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.8 } });
+      weekend.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.6 } });
+      weekend1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.9 } });
     }
   }, [inView1, weekend, weekend1]);
 
@@ -46,7 +46,7 @@ function Collection() {
 
   useEffect(() => {
     if (inView2) {
-      Starboy.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      Starboy.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 1.3 } });
     }
   }, [inView2, Starboy]);
 
