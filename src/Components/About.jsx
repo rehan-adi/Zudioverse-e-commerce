@@ -17,24 +17,36 @@ function About() {
       <motion.p
       initial={{opacity: 0, x: -100}}
       animate={{opacity: 1, x: 0}}
-      transition={{duration: 0.90, delay: 0.40}} 
+      transition={{duration: 0.90, delay: 0.30}} 
       className='text-center line mt-6'>We are a lifestyle retailer dedicated to inspiring customers through a unique <br /> combination of product, creativity and cultural understanding. Founded in 1970 in a <br /> small space across the street from the University of Pennsylvania.</motion.p>
       <motion.p
       initial={{opacity: 0, x: -100}}
       animate={{opacity: 1, x: 0}}
-      transition={{duration: 0.90, delay: 0.70}} 
+      transition={{duration: 0.90, delay: 0.50}} 
       className='text-center line mt-6'> <span className='text-black font-semibold'>ZUDIOVERSE</span> now operates over 200 stores in the United States, Canada and Europe, <br /> offering experiential retail environments and a well-curated mix men's product <br /> assortments.</motion.p>
       <div className='flex gap-96 pb-9 pt-24 items-center'>
         <div className=''>
-          <h1 className='text-5xl mad font-semibold'>WE EMPOWER YOU TO <br /> MOVE COMFORTABLY</h1>
-          <p className='text-lg mt-7 opacity-70'>At Athletics, we're about creating products that <br /> amplify your workouts. Lorem ipsum dol amet, <br /> consectetur piscis rabitur cursus lectus por.</p>
+          <motion.h1
+          initial={{opacity: 0, x: -100}}
+          animate={{opacity: 1, x: 0}}
+          transition={{duration: 0.90, delay: 0.80}} 
+          className='text-5xl mad font-semibold'>WE EMPOWER YOU TO <br /> MOVE COMFORTABLY</motion.h1>
+          <motion.p
+           initial={{opacity: 0, x: -100}}
+           animate={{opacity: 1, x: 0}}
+           transition={{duration: 0.90, delay: 1.1}}  
+          className='text-lg mt-7 opacity-70'>At Athletics, we're about creating products that <br /> amplify your workouts. Lorem ipsum dol amet, <br /> consectetur piscis rabitur cursus lectus por.</motion.p>
           <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Explore</button>
         </div>
         <div>
-          <img src="https://assets.website-files.com/61983c3a41be5bad7444a3c0/61f2e70177f8584393e77273_Image020%201.jpg" className='rotate-6' width={180} alt="" />
+          <motion.img
+          initial={{opacity: 0.20, y: -500}}
+          animate={{opacity: 1, y: 0, rotatey: 50}}
+          transition={{duration: 1.2}} 
+          src="https://assets.website-files.com/61983c3a41be5bad7444a3c0/61f2e70177f8584393e77273_Image020%201.jpg" className='rotate-2' width={190} alt="" />
         </div>
       </div>
-      <div className='flex gap-28 mt-8 mb-5 items-center'>
+      <div className='flex gap-32 mt-8 mb-5 items-center'>
         <div>
           <img src="https://assets.website-files.com/61983c3a41be5bad7444a3c0/61f2e7539d538babf0f423db_Image021%201.jpg" className='' width={480} alt="" />
         </div>
