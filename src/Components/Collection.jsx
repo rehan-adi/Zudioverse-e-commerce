@@ -146,7 +146,7 @@ function Collection() {
        initial={{opacity: 0, x : -35}}
        animate={controls1}
        ref={ref}  
-      className='lg:text-5xl text-2xl mt-20 ml-6 lg:ml-[70px] font-bold'>
+      className='lg:text-5xl text-2xl mt-20 ml-6 mb-10 lg:mb-0 lg:ml-[70px] font-bold'>
         Curated <span className='opacity-55 text-[#333333]'>Collections</span>
       </motion.h1>
       <div className='flex justify-center flex-col lg:flex-row mt-5 gap-10 items-center'>
@@ -194,24 +194,24 @@ function Collection() {
                 </span>
             </h1>
     </div>
-    <div className='bg-white mt-16 w-auto h-[85vh]'>
-      <motion.h1
+    <div className='bg-white lg:mt-16 w-auto lg:h-[85vh]'>
+    <motion.h1
         initial={{opacity: 0, x : -35}}
         animate={Starboy}
         ref={ref2}   
-      className='text-5xl mt-7 ml-[70px] font-bold'>Colabration with top brand's. </motion.h1>
-      <div className='flex justify-center mt-6 gap-10 items-center'>
+      className='lg:text-5xl text-2xl mt-7 ml-7 lg:ml-[70px] font-bold'>Colabration with top brand's. </motion.h1>
+      <div className='flex justify-center flex-col lg:flex-row mt-6 gap-10 items-center'>
         <div className='relative'>
-          <img src="https://oqium.com/cdn/shop/files/Screenshot_2023-07-18_at_18.46.24.jpg?v=1689859402&width=430" alt="" />
-          <h1 className="absolute bottom-60 text-3xl font-bold left-0 right-0 text-white text-center p-2">TOMMY HILFIGER</h1>
+          <img src="https://oqium.com/cdn/shop/files/Screenshot_2023-07-18_at_18.46.24.jpg?v=1689859402&width=430" className='lg:w-[430px]' width={320} alt="" />
+          <h1 className="absolute  bottom-48 lg:bottom-60 text-3xl font-bold left-0 right-0 text-white text-center p-2">TOMMY HILFIGER</h1>
         </div>
         <div className='relative'>
-          <img src="https://oqium.com/cdn/shop/files/IMG_2509.jpg?v=1695798933&width=430" alt="" />
-          <h1 className="absolute text-3xl font-bold bottom-60 left-0 right-0 text-white text-center p-2">ZUDIOVERSE</h1>
+          <img src="https://oqium.com/cdn/shop/files/IMG_2509.jpg?v=1695798933&width=430" className='lg:w-[430px]' width={320} alt="" />
+          <h1 className="absolute text-3xl font-bold bottom-48 lg:bottom-60 left-0 right-0 text-white text-center p-2">ZUDIOVERSE</h1>
         </div>
         <div className='relative'>
-          <img src="https://oqium.com/cdn/shop/files/IMG_2510.jpg?v=1695799132&width=430" alt="" />
-          <h1 className="absolute bottom-60 text-2xl font-bold left-0 right-0 text-white text-center p-2">LOUIS VUITTON</h1>
+          <img src="https://oqium.com/cdn/shop/files/IMG_2510.jpg?v=1695799132&width=430" className='lg:w-[430px]' width={320} alt="" />
+          <h1 className="absolute  bottom-48 lg:bottom-60 text-2xl font-bold left-0 right-0 text-white text-center p-2">LOUIS VUITTON</h1>
         </div>
       </div>
     </div>
