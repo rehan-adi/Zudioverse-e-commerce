@@ -215,51 +215,50 @@ function Collection() {
         </div>
       </div>
     </div>
-    <divvv className='h-[15vh] flex mt-5 mb-5 justify-center items-center w-auto bh-white'>
-               <div className='flex justify-center gap-4 lg:gap-14 items-center'>
+    <div className='h-[15vh] flex mt-5 mb-5 justify-center items-center w-auto bg-white'>
+               <div className='flex justify-center gap-2 lg:gap-14 items-center'>
                   <motion.img
                      initial={{opacity: 0, x : -35}}
                      animate={Image}
                      ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" clasName='lg:w-[65px]' width={20} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" clasName='lg:w-[65px]' width={27} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image1}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" clasName='lg:w-[70px]' width={20} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" clasName='lg:w-[70px]' width={27} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image2}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" clasName='lg:w-[70px]' width={20} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" clasName='lg:w-[700px]' width={27} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image3}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" clasName='lg:w-[100px]' width={40} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" clasName='lg:w-[100px]' width={45} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image4}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" clasName='lg:w-[100px]' width={40} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" clasName='lg:w-[100px]' width={45} alt="" />
                   <motion.img
                    initial={{opacity: 0, x : -35}}
                    animate={Image5}
                    ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" clasName='lg:w-[100px]' width={30} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" clasName='lg:w-[100px]' width={40} alt="" />
                   <motion.img
                    initial={{opacity: 0, x : -35}}
                    animate={Image6}
                    ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" clasName='lg:w-[100px]' width={30} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" clasName='lg:w-[100px]' width={40} alt="" />
                   <motion.img
                     initial={{opacity: 0, x : -35}}
                     animate={Image7}
                     ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" clasName='lg:w-[100px]' width={30} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" clasName='lg:w-[100px]' width={40} alt="" />
                </div>
-    </divvv> 
-
+    </div> 
     <div className='relative w-full h-[80vh] mt-4 bg-white'>
       <img
         src="https://oqium.com/cdn/shop/files/banner2880x1620.jpg?v=1703241559&width=1220"
