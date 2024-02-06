@@ -4,6 +4,7 @@ import { IoIosHeartEmpty } from 'react-icons/io';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaBarsStaggered } from "react-icons/fa6";
+import { GrClose } from "react-icons/gr";
 
 function Navbar() {
   const cartItems = useSelector((state) => state.cart);
@@ -23,19 +24,58 @@ function Navbar() {
         </h1>
       </div>
       <div className='flex lg:hidden'>
-          {/* Hamburger Menu Icon */}
-          <p onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <FaBarsStaggered className='text-2xl cursor-pointer' />
-          </p>
+        {/* Hamburger Menu Icon */}
+        <p onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <FaBarsStaggered className='text-2xl cursor-pointer' />
+        </p>
       </div>
       {/* Responsive Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed top-0 right-0 w-full h-full bg-white z-50 flex flex-col items-end">
+        <div className="lg:hidden fixed top-0 right-0 w-[60vw] h-full bg-white text-black z-50 flex flex-col items-end">
+          <button className='bg-red-500 text-white px-4 py-2 rounded mt-4 mr-5' onClick={() => setIsMenuOpen(false)}>
+          <GrClose />
+          </button>
+          <div className='flex justify-center items-center mt-20 pr-2 gap-7 flex-col'>
           <Link to="/" className='nav-link'>Home</Link>
           <Link to="/about" className='nav-link'>About</Link>
           <Link to="/Products" className='nav-link'>Products</Link>
           <Link to="/contact" className='nav-link'>Contact</Link>
-          {/* Add other navigation links as needed */}
+          </div>
+          {/* Add other navigation links and buttons as needed */}
+          {/* Search Bar */}
+          <div className="relative mt-4">
+            {isSearchVisible && (
+              <div className="absolute flex top-0 right-0 p-3 bg-white border border-slate-50 w-60">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="border p-2 w-full"
+                />
+                <button className='bg-yellow-500 px-4 '>
+                  <img src="src\Components\Images\Search.svg" alt="" />
+                </button>
+              </div>
+            )}
+            <img
+              src="src\Components\Images\Search.svg"
+              alt="Search"
+              onClick={() => setIsSearchVisible(!isSearchVisible)}
+              style={{ cursor: 'pointer' }}
+            />
+          </div>
+          {/* Cart Icon */}
+          <Link to="/cart" className='mt-4'>
+            <img
+              src="src\Components\Images\CART1.svg"
+              width={23}
+              alt="Cart"
+            />
+            <sup className='bg-black w-6 h-6 text-center rounded-full font-medium text-sm text-white absolute top-3 right-[140px] inline-flex items-center justify-center'>
+              {cartItems.length}
+            </sup>
+          </Link>
+          {/* Heart Icon */}
+          <span className='mt-4'><IoIosHeartEmpty className='text-2xl' /></span>
         </div>
       )}
       <div className='lg:flex uppercase hidden items-center gap-10'>
@@ -81,7 +121,7 @@ function Navbar() {
             width={23}
             alt="Cart"
           />
-          <sup className='bg-black w-6 h-6 text-center rounded-full font-medium text-sm text-white absolute top-3 right-[140px] inline-flex items-center justify-center'>
+          <sup className='bg-black w-6 h-6 text-center rounded-full font-medium text-sm text-white absolute top-20 right-0 inline-flex items-center justify-center'>
             {cartItems.length}
           </sup>
         </Link>
