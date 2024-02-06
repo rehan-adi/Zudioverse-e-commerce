@@ -215,7 +215,7 @@ function Collection() {
         </div>
       </div>
     </div>
-    <div className='h-[15vh] flex mt-5 mb-5 justify-center items-center w-auto bh-white'>
+    <divvv className='h-[15vh] flex mt-5 mb-5 justify-center items-center w-auto bh-white'>
                <div className='flex justify-center gap-4 lg:gap-14 items-center'>
                   <motion.img
                      initial={{opacity: 0, x : -35}}
@@ -258,7 +258,7 @@ function Collection() {
                     ref={ref3}   
                   src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" clasName='lg:w-[100px]' width={30} alt="" />
                </div>
-    </div> 
+    </divvv> 
 
     <div className='relative w-full h-[80vh] mt-4 bg-white'>
       <img
