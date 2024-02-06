@@ -146,14 +146,14 @@ function Collection() {
        initial={{opacity: 0, x : -35}}
        animate={controls1}
        ref={ref}  
-      className='lg:text-5xl text-2xl mt-20 ml-6 mb-10 lg:mb-0 lg:ml-[70px] font-bold'>
+      className='lg:text-5xl text-2xl mt-0 ml-6 mb-10 lg:mb-0 lg:ml-[70px] font-bold'>
         Curated <span className='opacity-55 text-[#333333]'>Collections</span>
       </motion.h1>
       <div className='flex justify-center flex-col lg:flex-row mt-5 gap-10 items-center'>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/IMG_2512_2.jpg?v=1695800703&width=430" className='lg:w-[430px]' width={320} alt="" />
           <p
-          style={imageTextStyle} className='uppercase'  >Elevate Your Wardrobe</p>
+          style={imageTextStyle} className='uppercase'  >Elevate Wardrobe</p>
         </div>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/IMG_2511.jpg?v=1695799414&width=430" className='lg:w-[430px]' width={320} alt="" />
@@ -216,47 +216,47 @@ function Collection() {
       </div>
     </div>
     <div className='h-[15vh] flex mt-5 mb-5 justify-center items-center w-auto bh-white'>
-               <div className='flex justify-center gap-14 items-center'>
+               <div className='flex justify-center gap-4 lg:gap-14 items-center'>
                   <motion.img
                      initial={{opacity: 0, x : -35}}
                      animate={Image}
                      ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" width={65} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" clasName='lg:w-[65px]' width={20} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image1}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" width={70} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" clasName='lg:w-[70px]' width={20} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image2}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" width={70} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" clasName='lg:w-[70px]' width={20} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image3}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" width={100} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" clasName='lg:w-[100px]' width={40} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image4}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" width={100} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" clasName='lg:w-[100px]' width={40} alt="" />
                   <motion.img
                    initial={{opacity: 0, x : -35}}
                    animate={Image5}
                    ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" width={100} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" clasName='lg:w-[100px]' width={30} alt="" />
                   <motion.img
                    initial={{opacity: 0, x : -35}}
                    animate={Image6}
                    ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" width={100} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" clasName='lg:w-[100px]' width={30} alt="" />
                   <motion.img
                     initial={{opacity: 0, x : -35}}
                     animate={Image7}
                     ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" width={100} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" clasName='lg:w-[100px]' width={30} alt="" />
                </div>
     </div> 
 
@@ -266,8 +266,8 @@ function Collection() {
         alt=""
         className='w-full h-full object-cover'
       />
-      <div className='absolute top-60 left-20 text-center text-white'>
-        <h1 className='text-4xl font-bold'>We will also add Sports <br /> Accessories in <br /> Future</h1>
+      <div className='absolute lg:top-60 top-52 lg:left-20 text-center text-black'>
+        <h1 className=' text-3xl lg:text-4xl font-bold'>We will also add Sports <br /> Accessories in <br /> Future</h1>
       </div>
     </div>
 
