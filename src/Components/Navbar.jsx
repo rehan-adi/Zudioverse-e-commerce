@@ -97,7 +97,7 @@ function Navbar() {
         {/* Search Bar */}
         <div className="relative">
           {isSearchVisible && (
-            <div className="absolute flex top-[78px] right-52 p-3 bg-white border border-slate-50 w-60">
+            <div className="absolute flex top-[50px] right-2 p-3 bg-white border border-slate-50 w-60">
               <input
                 type="text"
                 placeholder="Search..."
