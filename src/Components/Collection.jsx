@@ -146,7 +146,7 @@ function Collection() {
        initial={{opacity: 0, x : -35}}
        animate={controls1}
        ref={ref}  
-      className='lg:text-5xl text-2xl mt-0 ml-6 mb-10 lg:mb-0 lg:ml-[70px] font-bold'>
+      className='lg:text-5xl text-2xl mt-0 lg:mt-24 ml-6 mb-8 lg:mb-8 lg:ml-[70px] font-bold'>
         Curated <span className='opacity-55 text-[#333333]'>Collections</span>
       </motion.h1>
       <div className='flex justify-center flex-col lg:flex-row mt-5 gap-10 items-center'>
@@ -271,7 +271,7 @@ function Collection() {
       </div>
     </div>
 
-    <div className='w-auto h-[42vh] mt-14 flex flex-col justify-center items-center bg-white '>
+    <div className='w-auto h-[50vh] lg:h-[50vh] lg:mt-0 mt-0 flex flex-col justify-center items-center bg-white '>
            <marquee className='line-h text-[100px] font-semibold' behavior="scroll"   loop="-1" scrollamount="15" direction="left">
            DISCOVER LATEST TRENDS|EXCLUSIVE DEALS|TRENDY COLLECTION
           </marquee>
