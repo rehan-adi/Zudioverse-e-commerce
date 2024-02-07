@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div id='about' className='w-auto flex lg:px-0 px-3 justify-center pt-[120px] lg:pt-32 items-center flex-col lg:h-[260vh] bg-white'>
+    <div id='about' className='w-auto flex lg:px-0 px-3 mb-9 lg:mb-0 justify-center pt-[120px] lg:pt-32 items-center flex-col lg:h-[260vh] bg-white'>
       <motion.h1
       initial={{opacity: 0, x: -100}}
       animate={{opacity: 1, x: 0}}

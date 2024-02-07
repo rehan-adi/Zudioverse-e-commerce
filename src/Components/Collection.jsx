@@ -91,7 +91,7 @@ function Collection() {
   };
 
   return (
-    <div className='h-[480vh] w-auto bg-white'>
+    <div className='max-h-fit w-auto bg-white'>
           <div id='home' className='w-auto flex justify-center flex-col lg:flex-row gap-28 lg:gap-40 overflow-hidden items-center h-[180vh] lg:h-screen bg-white'>
              <div>
                   <motion.h4 
@@ -270,7 +270,7 @@ function Collection() {
       </div>
     </div>
 
-    <div className='w-auto h-[50vh] lg:pb-16 pb-0 lg:h-[50vh] lg:mt-0 mt-0 flex flex-col justify-center items-center bg-white '>
+    <div className='w-auto h-[50vh] lg:h-[50vh] lg:mt-0 mt-0 flex flex-col justify-center items-center bg-white '>
            <marquee className='line-h text-[100px] font-semibold' behavior="scroll"   loop="-1" scrollamount="15" direction="left">
            DISCOVER LATEST TRENDS|EXCLUSIVE DEALS|TRENDY COLLECTION
           </marquee>

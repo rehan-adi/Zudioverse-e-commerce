@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Contacj() {
     return (
-        <div id='contact' className='h-[160vh] pt-28 w-auto  bg-white'>
+        <div id='contact' className='max-h-fit pt-28 w-auto  bg-white'>
             <div className='flex items-center flex-col'>
                 <div className=''>
                     <h1 className='text-4xl mb-10 font-semibold'>Get in Touch with Us</h1>

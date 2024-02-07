@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className='w-auto h-[10vh] border-t-2 mt-10 flex justify-around items-center bg-white'>
+    <div className='w-auto h-[10vh] border-t-2 lg:mt-3 flex justify-around items-center bg-white'>
                 <div>
                 <h1 className='font-semibold uppercase text-xl lg:text-2xl'>Zudio<span className='text-yellow-500'>Verse</span></h1>
                 </div>
