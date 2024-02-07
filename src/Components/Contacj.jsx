@@ -11,14 +11,14 @@ function Contacj() {
         <div id='contact' className='max-h-fit pt-28 w-auto  bg-white'>
             <div className='flex items-center flex-col'>
                 <div className=''>
-                    <h1 className='text-4xl mb-10 font-semibold'>Get in Touch with Us</h1>
+                    <h1 className='lg:text-4xl text-2xl mb-10 text-center font-semibold'>Get in Touch with Us</h1>
                 </div>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.2009650676!2d-122.20590798781525!3d37.40268917507762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1703760435545!5m2!1sen!2sin" width="1280" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.2009650676!2d-122.20590798781525!3d37.40268917507762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1703760435545!5m2!1sen!2sin" className='lg:w-[83.5vw] lg:h-[52vh] w-[90vw] h-[45vh] ' style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                <div className='flex justify-center mt-4 gap-10 items-center'>
-                    <div className='bg-[#f3f3f3] flex justify-center items-center flex-col w-[25vw] h-[75vh]'>
+                <div className='flex justify-center flex-col lg:flex-row mt-4 gap-4 lg:gap-10 items-center'>
+                    <div className='bg-[#f3f3f3] flex justify-center items-center flex-col w-[90vw] lg:w-[25vw] h-[65vh] lg:h-[75vh]'>
                         <div>
                             <p>
                                 <span><FiPhoneCall className='inline-block mr-3 text-2xl ' /></span>+1234-567-8910</p>
@@ -40,28 +40,26 @@ function Contacj() {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-[#f3f3f3] flex justify-center items-center flex-col w-[56vw] h-[75vh]'>
+                    <div className='bg-[#f3f3f3] flex justify-center mb-5 lg:mb-0 items-center flex-col w-[90vw] lg:w-[56vw] h-[85vh] lg:h-[75vh]'>
                         <div>
-                            <h1 className='text-2xl mr-[355px] font-semibold'>Fell Free to Talk</h1>
+                            <h1 className='text-2xl lg:mr-[355px] font-semibold'>Fell Free to Talk</h1>
                         </div>
-                        <div className='mt-7 flex gap-5 '>
-                            <input type="text" name="" id="" placeholder='Name*' className='pr-20 bg-transparent border-gray-400 pl-4 py-2 border' />
-                            <input type="text" name="" id="" placeholder='Email*' className='pr-20 border border-gray-400 bg-transparent pl-4' />
+                        <div className='mt-7 flex flex-col lg:flex-row gap-7 lg:gap-5 '>
+                            <input type="text" name="" id="" placeholder='Name*' className='lg:pr-20 bg-transparent pr-14 border-gray-400 outline-none lg:pl-4 pl-2 py-2 border' />
+                            <input type="text" name="" id="" placeholder='Email*' className='lg:pr-20 border border-gray-400 pr-14 outline-none bg-transparent py-2 pl-2 lg:pl-4' />
                         </div>
-                        <div className='mt-5 text-center'>
-                            <input type="text" name="" id="" placeholder='Subject*' className='pr-[390px] pl-4 bg-transparent py-2 border border-gray-400' />
+                        <div className=' mt-6 lg:mt-5 text-center'>
+                            <input type="text" name="" id="" placeholder='Subject*' className='lg:pr-[390px] outline-none pl-2 pr-14 lg:pl-4 bg-transparent py-2 border border-gray-400' />
                         </div>
                         <div className='mt-5'>
-                            <textarea name="" id="" placeholder='Your Message*' className='p-6 bg-transparent border border-gray-400 ' cols="55" rows="6"></textarea>
+                            <textarea name="" id="" placeholder='Your Message*' className='p-3 bg-transparent border outline-none lg:w-[39vw] w-[70vw] border-gray-400' rows="6"></textarea>
                         </div>
                         <div>
-                            <button className='bg-black py-2 px-12 hover:opacity-80 mr-[468px] mt-5 text-white'>Send</button>
+                            <button className='bg-black py-2 px-12 hover:opacity-80 lg:mr-[468px] mt-5 text-white'>Send</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }

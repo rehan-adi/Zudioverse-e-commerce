@@ -16,7 +16,7 @@ function CartProduct() {
   };
 
   return (
-    <div className='lg:h-[140vh] h-[94vh] w-auto flex flex-col justify-start pt-28 items-center text-black bg-white '>
+    <div className='lg:h-[140vh] h-[100vh] w-auto flex flex-col justify-start pt-28 items-center text-black bg-white '>
          <ToastContainer />
       <h1 className='lg:text-4xl text-3xl mb-16 font-semibold'>Your Cart Section</h1>
       
