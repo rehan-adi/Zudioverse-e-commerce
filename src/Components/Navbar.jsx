@@ -122,7 +122,7 @@ function Navbar() {
             width={23}
             alt="Cart"
           />
-          <sup className='bg-black w-6 h-6 text-center rounded-full font-medium text-sm text-white absolute top-3 right-52 inline-flex items-center justify-center'>
+          <sup className='bg-black w-6 h-6 text-center rounded-full font-medium text-sm text-white absolute top-3 right-[189px] inline-flex items-center justify-center'>
             {cartItems.length}
           </sup>
         </Link>

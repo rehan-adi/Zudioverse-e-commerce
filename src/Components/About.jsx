@@ -46,7 +46,7 @@ function About() {
           src="https://assets.website-files.com/61983c3a41be5bad7444a3c0/61f2e70177f8584393e77273_Image020%201.jpg" className='rotate-2 lg:w-[190px] ' width={480} alt="" />
         </div>
       </div>
-      <div className='flex flex-col lg:flex-row gap-16 lg:gap-32 mt-20 lg:mt-8 mb-5 items-center'>
+      <div className='flex flex-col lg:flex-row gap-16 lg:gap-32 mt-20 lg:mt-8 mb-20 lg:mb-5 items-center'>
         <div>
           <img src="https://assets.website-files.com/61983c3a41be5bad7444a3c0/61f2e7539d538babf0f423db_Image021%201.jpg" className='' width={480} alt="" />
         </div>
@@ -73,21 +73,21 @@ function About() {
       >
         <SwiperSlide>
           <h1 className='lg:text-6xl text-xl mb-6 font-semibold'>"SUPERIOR TO OTHER <br /> ATHLETIC WEAR, GOING <br /> TO BUY MORE."</h1>
-          <p className='text-xl opacity-60'>JENNY HARLEM</p>
+          <p className='lg:text-xl text-sm opacity-60'>JENNY HARLEM</p>
         </SwiperSlide>
         <SwiperSlide>
-          <h1 className='text-6xl mb-6 font-semibold'>"YOUR BIKER SHORTS <br /> ARE MY GO TO <br /> RUNNING WEAR EVERY <br /> DAY."</h1>
-          <p className='text-xl opacity-60'>SARAH CALSEY</p>
+          <h1 className='lg:text-6xl text-xl mb-6 font-semibold'>"YOUR BIKER SHORTS <br /> ARE MY GO TO <br /> RUNNING WEAR EVERY <br /> DAY."</h1>
+          <p className='lg:text-xl text-sm opacity-60'>SARAH CALSEY</p>
         </SwiperSlide>
         <SwiperSlide>
-          <h1 className='text-6xl mb-6 font-semibold'>
+          <h1 className='lg:text-6xl text-xl mb-6 font-semibold'>
             "I'VE BOUGHT TWO <br /> PAIRS AND NOW I CAN'T <br /> LIVE WITHOUT THEM."
           </h1>
-          <p className='text-xl opacity-60'>EMILY COLSEN</p>
+          <p className='lg:text-xl text-sm opacity-60'>EMILY COLSEN</p>
         </SwiperSlide>
         <SwiperSlide>
-          <h1 className='text-6xl mb-6 font-semibold'>"THE SHORTS WERE <br /> JUST WHAT I NEEDED <br /> TO GET ACTIVE <br /> OUTSIDE."</h1>
-          <p className='text-xl opacity-60'>TAYLOR FLUTTER</p>
+          <h1 className='lg:text-6xl text-xl mb-6 font-semibold'>"THE SHORTS WERE <br /> JUST WHAT I NEEDED <br /> TO GET ACTIVE <br /> OUTSIDE."</h1>
+          <p className='lg:text-xl text-sm opacity-60'>TAYLOR FLUTTER</p>
         </SwiperSlide>
       </Swiper>
     </div>
