@@ -16,7 +16,7 @@ function Navbar() {
       initial={{ opacity: 0, y: -1000 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className='w-full navbar h-[10vh] fixed z-50 lg:px-36 px-7 bg-white border-b-2 items-center flex justify-between'>
+      className='w-full navbar h-[10vh] fixed z-50 lg:px-32 px-7 bg-white border-b-2 items-center flex justify-between'>
       <div className='flex gap-4 items-center'>
         {/* Logo */}
         <h1 className='font-semibold uppercase text-xl lg:text-2xl'>
