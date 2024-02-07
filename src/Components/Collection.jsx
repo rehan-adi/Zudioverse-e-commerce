@@ -270,7 +270,7 @@ function Collection() {
       </div>
     </div>
 
-    <div className='w-auto h-[50vh] lg:h-[50vh] lg:mt-0 mt-0 flex flex-col justify-center items-center bg-white '>
+    <div className='w-auto h-[50vh] lg:pb-16 pb-0 lg:h-[50vh] lg:mt-0 mt-0 flex flex-col justify-center items-center bg-white '>
            <marquee className='line-h text-[100px] font-semibold' behavior="scroll"   loop="-1" scrollamount="15" direction="left">
            DISCOVER LATEST TRENDS|EXCLUSIVE DEALS|TRENDY COLLECTION
           </marquee>

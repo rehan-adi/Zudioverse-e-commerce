@@ -16,16 +16,16 @@ function CartProduct() {
   };
 
   return (
-    <div className='h-[140vh] w-auto flex flex-col justify-start pt-28 items-center text-black bg-white '>
+    <div className='lg:h-[140vh] h-[94vh] w-auto flex flex-col justify-start pt-28 items-center text-black bg-white '>
          <ToastContainer />
-      <h1 className='text-4xl mb-16 font-semibold'>Your Cart Section</h1>
+      <h1 className='lg:text-4xl text-3xl mb-16 font-semibold'>Your Cart Section</h1>
       
       {cartItems.length === 0 ? (
         <div className='flex flex-col items-center'>
           <p className='font-semibold mb-16 text-2xl'>Your cart is empty</p>
-          <FiShoppingCart className='text-[200px]' />
+          <FiShoppingCart className='text-[200px] lg:mr-0 mr-6' />
           <Link to="/Products">
-          <button className='bg-black ml-10 mt-8 text-white px-9 py-3'>Shop</button>
+          <button className='bg-black ml-10 mt-8 mr-4 lg:mr-0 text-white px-9 py-3'>Shop</button>
           </Link>
         </div>
       ) : (

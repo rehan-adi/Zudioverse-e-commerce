@@ -31,7 +31,7 @@ function App() {
         <Route path='/cart' element={<CartProduct />} />
       </Routes>
       <GoToTopButton />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
