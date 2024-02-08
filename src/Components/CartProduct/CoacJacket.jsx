@@ -31,8 +31,8 @@ function CoacJacket() {
         <img src="https://uploads-ssl.webflow.com/5c4b8cc3eefcd01f7e8c02dd/5c4c077825a0935fbee1b645_1.jpg" width={450} alt="image" />
     </div>
     <div className='flex justify-center lg:items-start px-6 lg:px-0 flex-col'>
-        <h1 className='lg:text-5xl text-3xl font-semibold'>Coat Cerry <br /> Jacket</h1>
-        <h3 className='text-2xl mt-3'>$73.33</h3>
+        <h1 className='lg:text-5xl text-3xl lg:mt-0 mt-10 font-semibold'>Coat Cerry <br /> Jacket</h1>
+        <h3 className='lg:text-2xl text-xl  mt-3'>$73.33</h3>
         <p className='mt-5 text-sm lg:text-base'>
         Long sleeve patterned leather Jacket from Coat cerry. Full- <br className='lg:flex hidden'/>length front <br className='lg:hidden flex' /> button closure with pointed collar. Finished with <br className='lg:flex hidden' /> rounded hem + patch pocket at side. In black color <br className='flex lg:hidden' /> with pure <br className='lg:flex hidden'/> lether.
             </p>

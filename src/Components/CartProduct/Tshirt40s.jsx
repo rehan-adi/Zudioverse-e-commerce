@@ -32,8 +32,8 @@ function Tshirt40s() {
         <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" className='lg:w-[380px] w-[250px] ' alt="image" />
     </div>
     <div className='flex justify-center lg:items-start px-6 lg:px-0 flex-col'>
-        <h1 className='lg:text-5xl text-3xl font-semibold'>40s & Shorties <br /> T- Shirt</h1>
-        <h3 className='text-2xl mt-3'>$10.89</h3>
+        <h1 className='lg:text-5xl text-3xl lg:mt-0 mt-10 font-semibold'>40s & Shorties <br /> T- Shirt</h1>
+        <h3 className='lg:text-2xl text-xl mt-3'>$10.89</h3>
         <p className='mt-5 text-sm lg:text-base'>
         Simplistic logo tee from 40s & Shorties, featuring a primary <br /> color rendition of their typeface logo. Cotton is cut in a  <br />standard fit and offers short sleeves and tonal, ribbed banding <br /> at crew-neck.
             </p>

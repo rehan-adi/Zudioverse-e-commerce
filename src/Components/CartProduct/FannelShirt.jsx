@@ -32,8 +32,8 @@ function FannelShirt() {
         <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8c77d99ee591668884bf_UOLongSleevePatternedFlannelShirt.jpeg" className='lg:w-[350px] w-[250px]' alt="image" />
     </div>
     <div className='flex px-6 lg:px-0 justify-center lg:items-start flex-col'>
-        <h1 className='lg:text-5xl text-3xl font-semibold'>Patterned Flannel <br /> Shirt</h1>
-        <h3 className='text-2xl mt-3'>$45.89</h3>
+        <h1 className='lg:text-5xl text-3xl lg:mt-0 mt-10 font-semibold'>Patterned Flannel <br /> Shirt</h1>
+        <h3 className='lg:text-2xl text-xl mt-3'>$45.89</h3>
         <p className='mt-5 text-base'>
         Long sleeve patterned flannel shirt from Urban Outfitters. Full- <br />length front button closure with pointed collar. Finished with <br /> rounded hem + patch pocket at chest.
             </p>
