@@ -26,7 +26,7 @@ function Tshirt40s() {
     };
 
   return (
-    <div className='w-auto flex flex-col mb-14 items-center lg:flex-row pt-24 justify-around lg:h-screen  max-h-fit'>
+    <div className='w-auto flex flex-col lg:mb-0 mb-14 items-center lg:flex-row pt-24 justify-around lg:h-screen  max-h-fit'>
           <ToastContainer />
     <div className=''>
         <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" className='lg:w-[380px] w-[200px] ' alt="image" />
