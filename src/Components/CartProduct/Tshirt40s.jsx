@@ -29,7 +29,7 @@ function Tshirt40s() {
     <div className='w-auto flex flex-col lg:mb-0 mb-14 items-center lg:flex-row pt-24 justify-around lg:h-screen  max-h-fit'>
           <ToastContainer />
     <div className=''>
-        <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" className='lg:w-[380px] w-[200px] ' alt="image" />
+        <img src="https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8d3cced3c700cde0e895_40sShortiesTextLogoTee.jpeg" className='lg:w-[380px] w-[250px] ' alt="image" />
     </div>
     <div className='flex justify-center lg:items-start px-6 lg:px-0 flex-col'>
         <h1 className='lg:text-5xl text-3xl font-semibold'>40s & Shorties <br /> T- Shirt</h1>

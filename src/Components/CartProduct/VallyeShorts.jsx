@@ -28,7 +28,7 @@ function VallyeShorts() {
         <div className='w-auto flex items-center pt-32 flex-col lg:flex-row mb-14 justify-around max-h-fit lg:h-screen'>
          <ToastContainer />
             <div className=''>
-                <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" className='lg:w-[380px] w-[180px] ' alt="image" />
+                <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" className='lg:w-[380px] w-[250px] ' alt="image" />
             </div>
             <div className='flex justify-center lg:items-start px-6 lg:px-0 flex-col'>
                 <h1 className='lg:text-5xl text-3xl font-semibold'>Lucien Stripe Knit <br /> Valley Short</h1>
