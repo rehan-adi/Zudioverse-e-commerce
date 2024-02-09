@@ -8,22 +8,22 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div id='about' className='w-auto flex lg:px-0 px-3 mb-9 lg:mb-0 justify-center pt-[120px] lg:pt-32 items-center flex-col lg:h-[260vh] bg-white'>
+    <div id='about' className='w-auto flex lg:px-0 px-3 mb-9 lg:mb-0 justify-center md:pt-[180px] pt-[120px] lg:pt-32 items-center flex-col lg:h-[260vh] bg-white'>
       <motion.h1
       initial={{opacity: 0, x: -100}}
       animate={{opacity: 1, x: 0}}
       transition={{duration: 0.90, delay: 0.10}} 
-      className=' text-2xl lg:text-4xl font-semibold'>About ZUDIOVERSE</motion.h1>
+      className=' text-2xl lg:text-4xl md:text-5xl font-semibold'>About ZUDIOVERSE</motion.h1>
       <motion.p
       initial={{opacity: 0, x: -100}}
       animate={{opacity: 1, x: 0}}
       transition={{duration: 0.90, delay: 0.30}} 
-      className='text-center lg:text-base text-sm line mt-6'>We are a lifestyle retailer dedicated to inspiring customers through a unique <br /> combination of product, creativity and cultural understanding. Founded in 1970 in a <br  className='hidden lg:flex'/> small space across the street from the University of Pennsylvania.</motion.p>
+      className='text-center lg:text-base md:text-2xl md:mt-16 text-sm line mt-6'>We are a lifestyle retailer dedicated to inspiring customers through a unique <br className='md:hidden lg:flex' /> combination of product, creativity and cultural understanding. Founded <br className='md:flex lg:hidden'/> in 1970 in a <br  className='hidden lg:flex'/> small space across the street from the University of Pennsylvania.</motion.p>
       <motion.p
       initial={{opacity: 0, x: -100}}
       animate={{opacity: 1, x: 0}}
       transition={{duration: 0.90, delay: 0.50}} 
-      className='text-center lg:text-base text-sm line mt-6'> <span className='text-black font-semibold'>ZUDIOVERSE</span> now operates over 200 stores in the United States, Canada and Europe, <br /> offering experiential retail environments and a well-curated mix men's product <br className='lg:flex hidden' /> assortments.</motion.p>
+      className='text-center lg:text-base md:text-2xl md:mt-10 text-sm line mt-6'> <span className='text-black font-semibold'>ZUDIOVERSE</span> now operates over 200 stores in the United States, Canada and Europe, <br className='md:hidden lg:flex'/> offering experiential retail environments and a <br className='md:flex lg:hidden'/> well-curated mix men's product <br className='lg:flex hidden' /> assortments.</motion.p>
       <div className='flex gap-20 lg:gap-96 flex-col lg:flex-row pb-9 pt-24 items-center'>
         <div className='lg:pl-0 pl-4'>
           <motion.h1
@@ -35,8 +35,8 @@ function About() {
            initial={{opacity: 0, x: -100}}
            animate={{opacity: 1, x: 0}}
            transition={{duration: 0.90, delay: 1.1}}  
-          className='lg:text-lg text-base mt-7 opacity-70'>At Athletics, we're about creating products that <br className='lg:flex hidden' /> amplify your workouts. Lorem ipsum dol amet, <br /> consectetur piscis rabitur cursus lectus por.</motion.p>
-          <button className='py-3 px-4 mt-8 bg-black hover:opacity-80 text-white'>Explore</button>
+          className='lg:text-lg md:text-2xl text-base mt-7 '>At Athletics, we're about creating products that <br className='lg:flex hidden' /> amplify your workouts. Lorem ipsum dol amet, <br /> consectetur piscis rabitur cursus lectus por.</motion.p>
+          <button className='py-3 px-4 mt-8 bg-black md:text-xl md:px-6 md:py-3 hover:opacity-80 text-white'>Explore</button>
         </div>
         <div>
           <motion.img
@@ -54,7 +54,7 @@ function About() {
           <h3 className='mb-5 text-base lg:text-lg opacity-60'>OUR FOUNDER</h3>
           <h1 className='lg:text-5xl text-4xl mad font-semibold'>BEAUTY <br /> BEHIND <br />
             THE MADNESS</h1>
-            <p className='lg:text-lg text-base mt-7 opacity-70'>Rehan started this company in his room <br className='lg:flex hidden' /> apartment. Rabitur cursus ut lectus porta <br className='lg:flex hidden' /> placerat. Vamus quais facilisis nulla id dui <br className='lg:flex hidden' /> ague sellus portor.</p>
+            <p className='lg:text-lg text-base mt-7 '>Rehan started this company in his room <br className='lg:flex hidden' /> apartment. Rabitur cursus ut lectus porta <br className='lg:flex hidden' /> placerat. Vamus quais facilisis nulla id dui <br className='lg:flex hidden' /> ague sellus portor.</p>
         </div>
       </div>
       <Swiper
@@ -77,17 +77,17 @@ function About() {
         </SwiperSlide>
         <SwiperSlide>
           <h1 className='lg:text-6xl text-xl mb-6 font-semibold'>"YOUR BIKER SHORTS <br /> ARE MY GO TO <br /> RUNNING WEAR EVERY <br /> DAY."</h1>
-          <p className='lg:text-xl text-sm opacity-60'>SARAH CALSEY</p>
+          <p className='lg:text-xl text-sm opacity-90'>SARAH CALSEY</p>
         </SwiperSlide>
         <SwiperSlide>
           <h1 className='lg:text-6xl text-xl mb-6 font-semibold'>
             "I'VE BOUGHT TWO <br /> PAIRS AND NOW I CAN'T <br /> LIVE WITHOUT THEM."
           </h1>
-          <p className='lg:text-xl text-sm opacity-60'>EMILY COLSEN</p>
+          <p className='lg:text-xl text-sm opacity-90'>EMILY COLSEN</p>
         </SwiperSlide>
         <SwiperSlide>
           <h1 className='lg:text-6xl text-xl mb-6 font-semibold'>"THE SHORTS WERE <br /> JUST WHAT I NEEDED <br /> TO GET ACTIVE <br /> OUTSIDE."</h1>
-          <p className='lg:text-xl text-sm opacity-60'>TAYLOR FLUTTER</p>
+          <p className='lg:text-xl text-sm opacity-90'>TAYLOR FLUTTER</p>
         </SwiperSlide>
       </Swiper>
     </div>
