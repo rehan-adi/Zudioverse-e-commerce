@@ -18,7 +18,7 @@ function Collection() {
 
   useEffect(() => {
     if (inView) {
-      controls1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      controls1.start({ x: 0, opacity: 1, transition: { duration: 0.40, delay: 0.2 } });
     }
   }, [inView, controls1]);
 
@@ -143,13 +143,10 @@ function Collection() {
              </div>
     </div>
       <div className='flex justify-center lg:justify-start lg:ml-[70px] items-center'>
-      <motion.h1
-       initial={{opacity: 0, x : -35}}
-       animate={controls1}
-       ref={ref}  
+      <h1
       className='lg:text-5xl text-2xl mt-0 lg:mt-24  mb-8 lg:mb-8 md:text-4xl font-bold'>
         Curated <span className='opacity-55 text-[#333333]'>Collections</span>
-      </motion.h1>
+      </h1>
       </div>
       <div className='flex justify-center flex-col lg:flex-row mt-5 gap-10 items-center'>
         <div className='relative'>
@@ -193,9 +190,9 @@ function Collection() {
             <h1 className='font-semibold uppercase text-xs md:text-2xl lg:text-2xl'>ZudioVerse Offer <span> 
             <TypeAnimation
       sequence={[
-        '30% Discount On Order Over - $200',
+        '30% Discount On Order Over - $20',
         1000,
-        'Best Quality Cloths Only For You',
+        'Best Quality Cloths For You',
         1000,
       ]}
       wrapper="span"
@@ -207,23 +204,25 @@ function Collection() {
             </h1>
     </div>
     <div className='bg-white flex justify-center max-h-fit flex-col items-center lg:justify-start lg:mt-16 w-auto'>
+    <div className='flex justify-center items-center lg:mr-[520px] lg:justify-start'>
     <motion.h1
         initial={{opacity: 0, x : -35}}
         animate={Starboy}
         ref={ref2}   
-      className='lg:text-5xl text-lg mt-7 lg:mb-5 md:text-3xl md:mb-8 md:mt-20 font-bold'>Colabration with top brand's. </motion.h1>
+      className='lg:text-5xl text-lg mt-16 lg:mb-5 md:text-3xl lg:mt-2 md:mb-8 mb-6 md:mt-20 font-bold'>Colabration with top brand's. </motion.h1>
+    </div>
       <div className='flex justify-center flex-col lg:flex-row mt-6 gap-10 items-center'>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/Screenshot_2023-07-18_at_18.46.24.jpg?v=1689859402&width=430" className='lg:w-[430px]  md:w-[575px]' width={320} alt="" />
-          <h1 className="absolute  bottom-48 lg:bottom-60 text-3xl font-bold left-0 right-0 text-white text-center p-2">TOMMY HILFIGER</h1>
+          <h1 className="absolute  bottom-44 md:bottom-80 lg:bottom-60 text-3xl font-bold left-0 right-0 text-white text-center p-2">TOMMY HILFIGER</h1>
         </div>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/IMG_2509.jpg?v=1695798933&width=430" className='lg:w-[430px]  md:w-[575px]' width={320} alt="" />
-          <h1 className="absolute text-3xl font-bold bottom-48 lg:bottom-60 left-0 right-0 text-white text-center p-2">ZUDIOVERSE</h1>
+          <h1 className="absolute text-3xl font-bold bottom-44 md:bottom-80 lg:bottom-60 left-0 right-0 text-white text-center p-2">ZUDIOVERSE</h1>
         </div>
         <div className='relative'>
           <img src="https://oqium.com/cdn/shop/files/IMG_2510.jpg?v=1695799132&width=430" className='lg:w-[430px]  md:w-[575px]' width={320} alt="" />
-          <h1 className="absolute  bottom-48 lg:bottom-60 text-2xl font-bold left-0 right-0 text-white text-center p-2">LOUIS VUITTON</h1>
+          <h1 className="absolute  bottom-44  lg:bottom-60 text-3xl md:bottom-80 font-bold left-0 right-0 text-white text-center p-2">LOUIS VUITTON</h1>
         </div>
       </div>
     </div>
@@ -277,12 +276,12 @@ function Collection() {
         alt=""
         className='w-full h-full object-cover'
       />
-      <div className='absolute lg:top-60 top-52 lg:left-20 text-center text-black'>
-        <h1 className=' text-3xl lg:text-4xl font-bold'>We will also add Sports <br /> Accessories in <br /> Future</h1>
+      <div className='absolute lg:top-60 md:top-56 top-52 md:right-10 lg:left-[-760px] text-center text-black'>
+        <h1 className=' text-3xl lg:text-4xl md:text-5xl font-bold'>We will also add Sports <br /> Accessories in <br /> Future</h1>
       </div>
     </div>
 
-    <div className='w-auto h-[50vh] lg:h-[50vh] lg:mt-0 mt-0 flex flex-col justify-center items-center bg-white '>
+    <div className='w-auto h-[50vh] lg:h-[50vh] md:h-[45vh] lg:mt-0 mt-0 flex flex-col justify-center items-center bg-white '>
            <marquee className='line-h text-[100px] font-semibold' behavior="scroll"   loop="-1" scrollamount="15" direction="left">
            DISCOVER LATEST TRENDS|EXCLUSIVE DEALS|TRENDY COLLECTION
           </marquee>
