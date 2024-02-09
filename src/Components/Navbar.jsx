@@ -16,17 +16,17 @@ function Navbar() {
       initial={{ opacity: 0, y: -1000 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className='w-full navbar h-[10vh] fixed z-50 lg:px-32 px-7 bg-white border-b-2 items-center flex justify-between'>
+      className='w-full navbar h-[10vh] fixed z-50 lg:px-32 md:px-20 px-7 bg-white border-b-2 items-center flex justify-between'>
       <div className='flex gap-4 items-center'>
         {/* Logo */}
-        <h1 className='font-semibold uppercase text-xl lg:text-2xl'>
+        <h1 className='font-semibold md:text-3xl uppercase text-xl lg:text-2xl'>
           Zudio<span className='text-yellow-500'>Verse</span>
         </h1>
       </div>
       <div className='flex lg:hidden'>
         {/* Hamburger Menu Icon */}
         <p onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <FaBarsStaggered className='text-2xl cursor-pointer' />
+          <FaBarsStaggered className='text-2xl md:text-4xl cursor-pointer' />
         </p>
       </div>
       {/* Responsive Menu */}
