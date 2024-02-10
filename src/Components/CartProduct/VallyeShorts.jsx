@@ -25,15 +25,15 @@ function VallyeShorts() {
       };
 
     return (
-        <div className='w-auto flex items-center pt-32 flex-col lg:flex-row mb-14 justify-around max-h-fit lg:h-screen'>
+        <div className='w-auto flex items-center pt-32 lg:pt-32 md:pt-44 flex-col lg:flex-row mb-14 justify-around max-h-fit lg:h-screen'>
          <ToastContainer />
             <div className=''>
-                <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" className='lg:w-[380px] w-[250px] ' alt="image" />
+                <img src="	https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg" className='lg:w-[380px] md:w-[400px] w-[250px] ' alt="image" />
             </div>
-            <div className='flex justify-center lg:items-start px-6 lg:px-0 flex-col'>
-                <h1 className='lg:text-5xl text-3xl lg:mt-0 mt-10 font-semibold'>Lucien Stripe Knit <br /> Valley Short</h1>
-                <h3 className='text-xl lg:text-2xl mt-3'>$39.10</h3>
-                <p className='mt-5 text-sm lg:text-base'>Easy pull on + go short in an allover vertical stripe pattern. <br className='lg:flex hidden' />  Soft textured cotton is cut in a silhouette that hits above the <br className='lg:flex hidden' /> knee with a split hem, featuring an elastic waist + adjusts <br className='lg:flex hidden' /> exterior drawstring for a comfortable fit. Complete with front <br  className='lg:flex hidden'/> slip pockets and back patch pockets. Get them only at Urban <br className='lg:flex hidden' /> Outfitters.</p>
+            <div className='flex justify-center lg:items-start px-6 lg:px-0 md:px-10 flex-col'>
+                <h1 className='lg:text-5xl md:text-4xl text-3xl lg:mt-0 md:mt-20 mt-10 font-semibold'>Lucien Stripe Knit <br className='flex lg:flex md:hidden'/> Valley Short</h1>
+                <h3 className='text-xl md:text-2xl lg:text-2xl mt-3'>$39.10</h3>
+                <p className='mt-5 text-sm md:text-lg lg:text-base'>Easy pull on + go short in an allover vertical stripe pattern. <br className='lg:flex hidden' />  Soft textured cotton is cut in a silhouette that hits above the <br className='lg:flex hidden' /> knee with a split hem, featuring an elastic waist + adjusts <br className='lg:flex hidden' /> exterior drawstring for a comfortable fit. Complete with front <br  className='lg:flex hidden'/> slip pockets and back patch pockets. Get them only at Urban <br className='lg:flex hidden' /> Outfitters.</p>
                 <h3 className='font-semibold mt-5 text-black text-lg'>Size</h3>
                 <select className='mt-2 bg-slate-50 py-2 px-2 outline-none border-b pr-6 lg:pr-[480px]' name="cars" id="cars">
                     <option value="volvo">Select Size</option>
