@@ -45,20 +45,20 @@ function Contacj() {
                     </div>
                     <div className='bg-[#f3f3f3] flex justify-center mb-5 lg:mb-0 items-center flex-col w-[90vw] lg:w-[56vw] h-[85vh] lg:h-[75vh]'>
                         <div>
-                            <h1 className='text-2xl lg:mr-[355px] font-semibold'>Fell Free to Talk</h1>
+                            <h1 className='text-2xl lg:text-2xl md:mb-12 lg:mb-4 md:text-4xl lg:mr-[355px] font-semibold'>Fell Free to Talk</h1>
                         </div>
                         <div className='mt-7 flex flex-col lg:flex-row gap-7 lg:gap-5 '>
-                            <input type="text" name="" id="" placeholder='Name*' className='lg:pr-20 bg-transparent pr-14 border-gray-400 outline-none lg:pl-4 pl-2 py-2 border' />
-                            <input type="text" name="" id="" placeholder='Email*' className='lg:pr-20 border border-gray-400 pr-14 outline-none bg-transparent py-2 pl-2 lg:pl-4' />
+                            <input type="text" name="" id="" placeholder='Name*' className='lg:pr-20 bg-transparent pr-14 md:pr-80 border-gray-400 md:py-3 outline-none lg:pl-4 pl-2 py-2 border' />
+                            <input type="text" name="" id="" placeholder='Email*' className='lg:pr-20 border border-gray-400 pr-14 md:pr-80 outline-none md:py-3 bg-transparent py-2 pl-2 lg:pl-4' />
                         </div>
                         <div className=' mt-6 lg:mt-5 text-center'>
-                            <input type="text" name="" id="" placeholder='Subject*' className='lg:pr-[390px] outline-none pl-2 pr-14 lg:pl-4 bg-transparent py-2 border border-gray-400' />
+                            <input type="text" name="" id="" placeholder='Subject*' className='lg:pr-[390px] outline-none pl-2 pr-14 md:pr-80 lg:pl-4 md:py-3 bg-transparent py-2 border border-gray-400' />
                         </div>
                         <div className='mt-5'>
-                            <textarea name="" id="" placeholder='Your Message*' className='p-3 bg-transparent border outline-none lg:w-[39vw] w-[70vw] border-gray-400' rows="6"></textarea>
+                            <textarea name="" id="" placeholder='Your Message*' className='p-3 bg-transparent border outline-none lg:w-[39vw] md:w-[68vw] w-[70vw] border-gray-400' rows="6"></textarea>
                         </div>
                         <div>
-                            <button className='bg-black py-2 px-12 hover:opacity-80 lg:mr-[468px] mt-5 text-white'>Send</button>
+                            <button className='bg-black py-2 lg:py-2 lg:px-12 md:px-14 md:py-3 px-12 hover:opacity-80 lg:mr-[468px] mt-5 lg:text-sm text-base md:text-2xl text-white'>Send</button>
                         </div>
                     </div>
                 </div>
