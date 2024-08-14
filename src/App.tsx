@@ -1,18 +1,18 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-import About from './Components/About';
-import Products from './Components/Products';
-import Collection from './Components/Collection';
-import Contacj from './Components/Contacj';
-import GoToTopButton from './Components/GoToTopButton';
+import Navbar from './Components/Navbar.tsx';
+import Footer from './Components/Footer.tsx';
+import About from './Components/About.tsx';
+import Products from './Components/Products.tsx';
+import Collection from './Components/Collection.tsx';
+import Contacj from './Components/Contacj.tsx';
+import GoToTopButton from './Components/GoToTopButton.tsx';
 import { Routes, Route } from 'react-router-dom';
-import VallyeShorts from './Components/CartProduct/VallyeShorts';
-import Tshirt40s from './Components/CartProduct/Tshirt40s';
-import FannelShirt from './Components/CartProduct/FannelShirt';
-import CoacJacket from './Components/CartProduct/CoacJacket';
-import SwimShort from './Components/CartProduct/SwimShort';
-import CartProduct from './Components/CartProduct';
+import VallyeShorts from './Components/CartProduct/VallyeShorts.tsx';
+import Tshirt40s from './Components/CartProduct/Tshirt40s.tsx';
+import FannelShirt from './Components/CartProduct/FannelShirt.jsx';
+import CoacJacket from './Components/CartProduct/CoacJacket.tsx';
+import SwimShort from './Components/CartProduct/SwimShort.tsx';
+import CartProduct from './Components/CartProduct.tsx';
 
 function App() {
   return (

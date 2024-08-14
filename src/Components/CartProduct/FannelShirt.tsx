@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImTruck } from "react-icons/im";
 import { useDispatch } from 'react-redux';
-import { addItem } from './Store/Slice';
+import { addItem } from './Store/Slice.tsx';
 import { TiShoppingCart } from "react-icons/ti";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
