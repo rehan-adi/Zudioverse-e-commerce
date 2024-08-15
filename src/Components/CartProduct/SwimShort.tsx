@@ -5,18 +5,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch } from 'react-redux';
 import { addItem } from './Store/Slice';
+import { Item } from '@/interfaces/interface';
 
 function SwimShort() {
 
     const Dispatch = useDispatch();
     const notify = () => toast.success("Added To Cart");
 
-    const Submit = (item) => {
+    const Submit = (item: Item) => {
         Dispatch(addItem(item))
     };
 
-  const item = {
-    id: 5,
+  const item: Item = {
+    id: '5',
     name : 'Boardies® Swim Short',
     price: 20.89,
     quantity: 1,
