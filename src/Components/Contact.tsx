@@ -5,7 +5,6 @@ import { SiGooglemaps } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 
-
 function Contacj() {
     return (
         <div id='contact' className='max-h-fit pt-28 w-auto  bg-white'>
@@ -14,7 +13,7 @@ function Contacj() {
                     <h1 className='lg:text-4xl md:text-4xl md:mt-16 lg:mt-2 text-2xl lg:mb-10 md:mb-14 mb-10 text-center font-semibold'>Get in Touch with Us</h1>
                 </div>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.2009650676!2d-122.20590798781525!3d37.40268917507762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1703760435545!5m2!1sen!2sin" className='lg:w-[83.5vw] lg:h-[52vh] w-[90vw] h-[45vh] ' style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.2009650676!2d-122.20590798781525!3d37.40268917507762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1703760435545!5m2!1sen!2sin" className='lg:w-[83.5vw] lg:h-[52vh] w-[90vw] h-[45vh] ' style={{ border: 0 }} loading="lazy">
                     </iframe>
                 </div>
                 <div className='flex justify-center flex-col lg:flex-row mt-4 gap-4 lg:gap-10 items-center'>
@@ -55,7 +54,7 @@ function Contacj() {
                             <input type="text" name="" id="" placeholder='Subject*' className='lg:pr-[390px] outline-none pl-2 pr-14 md:pr-80 lg:pl-4 md:py-3 bg-transparent py-2 border border-gray-400' />
                         </div>
                         <div className='mt-5'>
-                            <textarea name="" id="" placeholder='Your Message*' className='p-3 bg-transparent border outline-none lg:w-[39vw] md:w-[68vw] w-[70vw] border-gray-400' rows="6"></textarea>
+                            <textarea name="" id="" placeholder='Your Message*' className='p-3 bg-transparent border outline-none lg:w-[39vw] md:w-[68vw] w-[70vw] border-gray-400' rows={6}></textarea>
                         </div>
                         <div>
                             <button className='bg-black py-2 lg:py-2 lg:px-12 md:px-14 md:py-3 px-12 hover:opacity-80 lg:mr-[468px] mt-5 lg:text-sm text-base md:text-2xl text-white'>Send</button>

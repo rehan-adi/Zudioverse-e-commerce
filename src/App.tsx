@@ -4,7 +4,7 @@ import Footer from './Components/Footer.tsx';
 import About from './Components/About.tsx';
 import Products from './Components/Products.tsx';
 import Collection from './Components/Collection.tsx';
-import Contacj from './Components/Contacj.tsx';
+import Contacj from './Components/Contact.tsx';
 import GoToTopButton from './Components/GoToTopButton.tsx';
 import { Routes, Route } from 'react-router-dom';
 import VallyeShorts from './Components/CartProduct/VallyeShorts.tsx';
