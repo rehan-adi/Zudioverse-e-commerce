@@ -5,21 +5,22 @@ import { addItem } from './Store/Slice';
 import { TiShoppingCart } from "react-icons/ti";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Item } from '@/interfaces/interface';
 
 function VallyeShorts() {
 
     const Dispatch = useDispatch();
     const notify = () => toast.success("Added To Cart");
 
-   const Submit = (item) => {
+   const Submit = (item: Item) => {
       Dispatch(addItem(item));
       };
 
 
-    const item = {
-        id: 2,
+    const item: Item = {
+        id: '2',
         name: ' Lucien Knit Valley Short',
-        price: '39.10',
+        price: 39.10,
         quantity: 1,
         img: 'https://uploads-ssl.webflow.com/5c7b453c9254e9017fc1c0d8/5c7b8de6ced3c77eaee0e8d6_UOLucienStripeKnitVolleyShort.jpeg'
       };
