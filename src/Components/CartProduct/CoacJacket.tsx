@@ -6,17 +6,31 @@ import { TiShoppingCart } from "react-icons/ti";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+interface Item {
+    id: string;
+    name: string;
+    price: number;
+    quantity: number;
+    discount: number;
+    img: string;
+}
+
 function CoacJacket() {
 
     const Dispatch = useDispatch();
     const notify = () => toast.success("Added To Cart");
 
-    const Submit = (item) => {
-        Dispatch(addItem(item))
+    const Submit = (item: Item) => {
+        const cartItem = {
+            ...item,
+            id: item.id.toString(),
+        };
+        Dispatch(addItem(cartItem));
     };
 
-    const item = {
-        id: 4,
+
+    const item: Item = {
+        id: '4',
         name : '40s & Shorties T-Shirt',
         price: 73.33,
         quantity: 1,
