@@ -7,8 +7,6 @@ import { useInView } from 'react-intersection-observer';
 
 function Collection() {
 
-
-
   const controls1 = useAnimation();
 
   const [ref, inView] = useInView({
@@ -232,42 +230,42 @@ function Collection() {
                      initial={{opacity: 0, x : -35}}
                      animate={Image}
                      ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" clasName='lg:w-[65px]' width={27} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" className='lg:w-[65px]' width={27} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image1}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" clasName='lg:w-[70px]' width={27} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" className='lg:w-[70px]' width={27} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image2}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" clasName='lg:w-[700px]' width={27} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" className='lg:w-[700px]' width={27} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image3}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" clasName='lg:w-[100px]' width={45} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" className='lg:w-[100px]' width={45} alt="" />
                   <motion.img
                   initial={{opacity: 0, x : -35}}
                   animate={Image4}
                   ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" clasName='lg:w-[100px]' width={45} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-47.svg" className='lg:w-[100px]' width={45} alt="" />
                   <motion.img
                    initial={{opacity: 0, x : -35}}
                    animate={Image5}
                    ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" clasName='lg:w-[100px]' width={40} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-56.svg" className='lg:w-[100px]' width={40} alt="" />
                   <motion.img
                    initial={{opacity: 0, x : -35}}
                    animate={Image6}
                    ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" clasName='lg:w-[100px]' width={40} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-48.svg" className='lg:w-[100px]' width={40} alt="" />
                   <motion.img
                     initial={{opacity: 0, x : -35}}
                     animate={Image7}
                     ref={ref3}   
-                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" clasName='lg:w-[100px]' width={40} alt="" />
+                  src="https://hugotech.co/wp-content/uploads/2023/11/Asset-49.svg" className='lg:w-[100px]' width={40} alt="" />
                </div>
     </div> 
     <div className='relative w-full h-[80vh] mt-4 bg-white'>
