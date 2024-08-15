@@ -5,18 +5,19 @@ import { addItem } from './Store/Slice.tsx';
 import { TiShoppingCart } from "react-icons/ti";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Item } from '@/interfaces/interface.ts';
 
 function FannelShirt() {
 
     const Dispatch = useDispatch();
     const notify = () => toast.success("Added To Cart");
 
-    const Submit = (item) => {
+    const Submit = (item: Item) => {
       Dispatch(addItem(item));
       };
 
-      const item = {
-        id: 1,
+      const item: Item = {
+        id: '1',
         name: 'Patterned Flannel Shirt',
         price: 45.89,
         quantity: 1,
