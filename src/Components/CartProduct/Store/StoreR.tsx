@@ -1,11 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import Slice from './Slice';
-
+import { configureStore } from "@reduxjs/toolkit";
+import Slice from "./Slice";
 
 const StoreR = configureStore({
-    reducer: {
-       cart : Slice,
-    },
-  });
+  reducer: {
+    cart: Slice,
+  },
+});
 
-export default StoreR
+export type RootState = ReturnType<typeof StoreR.getState>;
+
+export default StoreR;

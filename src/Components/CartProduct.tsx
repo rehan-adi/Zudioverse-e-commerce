@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from './CartProduct/Store/StoreR';
 import { removeItem } from './CartProduct/Store/Slice';
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
@@ -8,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Item } from '@/interfaces/interface';
 
 function CartProduct() {
-  const cartItems = useSelector((state) => state.cart);
+  const cartItems = useSelector((state: RootState) => state.cart);
   const dispatch = useDispatch();
   const notify = () => toast.error("Removed From Cart");
 
