@@ -5,9 +5,10 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaBarsStaggered } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
+import { RootState } from './CartProduct/Store/StoreR';
 
 function Navbar() {
-  const cartItems = useSelector((state) => state.cart);
+  const cartItems = useSelector((state: RootState) => state.cart);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
 
