@@ -5,13 +5,14 @@ import { FiShoppingCart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Item } from '@/interfaces/interface';
 
 function CartProduct() {
   const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const notify = () => toast.error("Removed From Cart");
 
-  const removeItemHandler = (item) => {
+  const removeItemHandler = (item: Item) => {
     dispatch(removeItem(item));
   };
 
@@ -30,7 +31,7 @@ function CartProduct() {
         </div>
       ) : (
         <ul className='lg:flex justify-center text-center items-center lg:mt-14 mt-10 px-10 lg:px-0 lg:flex-col lg:gap-3 w-full'>
-          {cartItems.map((item) => (
+          {cartItems.map((item: Item) => (
             <li className='lg:flex border-2 lg:py-0 py-4 items-center mb-6' key={item.id}>
               <img
                 src={item.img}
